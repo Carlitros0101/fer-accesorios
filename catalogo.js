@@ -4,6 +4,25 @@ window.FER_CONFIG={
   instagram:'https://www.instagram.com/fer_accesorioss_/'
 };
 
+window.FER_BRAND={
+  name:'FER',
+  descriptor:'accesorios',
+  palette:{
+    wine:'#6e3242',
+    rose:'#b45d70',
+    blush:'#f0c9cf',
+    ivory:'#fffaf7',
+    ink:'#2a1d22'
+  }
+};
+
+(function loadBrand(){
+  const link=document.createElement('link');
+  link.rel='stylesheet';
+  link.href='brand.css?v=20260907-brand';
+  document.head.appendChild(link);
+})();
+
 window.FER_PRODUCTS=[
   {
     code:'FER-001',
