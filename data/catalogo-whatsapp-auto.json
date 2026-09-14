@@ -1,0 +1,114 @@
+[
+  {
+    "codigo": "FER-001",
+    "nombre": "Aros Copihue",
+    "precio": 9000,
+    "descripcion": "Aritos tejidos en la técnica de macrame, con ganchito de acero quirúrgico o plata. Disponibles a pedido en rojo o blanco.",
+    "imagen": "assets/productos/whatsapp-auto/FER-001.jpg"
+  },
+  {
+    "codigo": "FER-002",
+    "nombre": "Argolla abejita y flores",
+    "precio": 12000,
+    "descripcion": "Argolla de acero quirúrgico de 5,5 cm de diámetro. Combinando la delicadeza de la lavanda, la energía del girasol y el encanto de las abejitas. Diseño exclusivo. Hecho a mano.",
+    "imagen": "assets/productos/whatsapp-auto/FER-002.jpg"
+  },
+  {
+    "codigo": "FER-003",
+    "nombre": "Aros Rosca",
+    "precio": 9000,
+    "descripcion": "Aros tejidos en argolla de alambre hipoalergénico, con piedra natural y ganchito de acero quirúrgico(plateado) y bañado en oro (dorado) 1 disponible de cada uno: - Lapislázuli - Amatista - Jade También lo puedes pedir personalizado según disponibilidad.",
+    "imagen": "assets/productos/whatsapp-auto/FER-003.jpg"
+  },
+  {
+    "codigo": "FER-004",
+    "nombre": "Aritos de corazón Chileno",
+    "precio": 8000,
+    "descripcion": "Hechos con alambre de cobre, con cristales y ganchito de acero quirúrgico",
+    "imagen": "assets/productos/whatsapp-auto/FER-004.jpg"
+  },
+  {
+    "codigo": "FER-005",
+    "nombre": "Aros flor con piedra",
+    "precio": 5000,
+    "descripcion": "Ganchito hipoalergénico, flor con cirstales acompañado de una piedra natural en el final. Son cómodos y livianos. Disponibles en, Lapislázuli Jade Piedra Luna Amatista Ojo de tigre Jaspe rojo Turquesa",
+    "imagen": "assets/productos/whatsapp-auto/FER-005.jpg"
+  },
+  {
+    "codigo": "FER-006",
+    "nombre": "Aros argollas",
+    "precio": 10000,
+    "descripcion": "Hechas de alambre de cobre, con cristales y pasador hipoalergénico. Todo hecho a mano.",
+    "imagen": "assets/productos/whatsapp-auto/FER-006.jpg"
+  },
+  {
+    "codigo": "FER-007",
+    "nombre": "Pulsera roja",
+    "precio": 3000,
+    "descripcion": "Ajustable 5 disponibles.",
+    "imagen": "assets/productos/whatsapp-auto/FER-007.jpg"
+  },
+  {
+    "codigo": "FER-008",
+    "nombre": "Denario",
+    "precio": 8500,
+    "descripcion": "Hecho de alambre de cobre con cristales y dijes bañados en oro.",
+    "imagen": "assets/productos/whatsapp-auto/FER-008.jpg"
+  },
+  {
+    "codigo": "FER-009",
+    "nombre": "Pulsera niños",
+    "precio": 8000,
+    "descripcion": "Pulsera hecha con alambre de cobre en tono dorado, con cadena y dijes bañados en oro y piedra natural cuarzo rosado.",
+    "imagen": "assets/productos/whatsapp-auto/FER-009.jpg"
+  },
+  {
+    "codigo": "FER-010",
+    "nombre": "Aros conchita",
+    "precio": 8000,
+    "descripcion": "Aros de arcilla polimérica con dije de acero quirúrgico y ganchito en baño de oro o acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-010.jpg"
+  },
+  {
+    "codigo": "FER-011",
+    "nombre": "Aros doble corazón",
+    "precio": 12000,
+    "descripcion": "Aros con pasador hipoalergénico de alambre, corazón del centro de arcilla polimérica y cristales. se puede personalizar con el/los color/colores de tu preferencia.",
+    "imagen": "assets/productos/whatsapp-auto/FER-011.jpg"
+  },
+  {
+    "codigo": "FER-012",
+    "nombre": "Aros estrellita",
+    "precio": 6500,
+    "descripcion": "pasador de acero quirúrgico y conchita colgante. se puede pedir en distintos colores según stock disponible.",
+    "imagen": "assets/productos/whatsapp-auto/FER-012.jpg"
+  },
+  {
+    "codigo": "FER-013",
+    "nombre": "Collar corazón",
+    "precio": 9000,
+    "descripcion": "Collar de acero quirúrgico de 50 cm aproximadamente. Dije de corazón hecho a mano.",
+    "imagen": "assets/productos/whatsapp-auto/FER-013.jpg"
+  },
+  {
+    "codigo": "FER-014",
+    "nombre": "Rosario",
+    "precio": 18000,
+    "descripcion": "Hecho en alambre de cobre y cristales, dijes bañados en oro.",
+    "imagen": "assets/productos/whatsapp-auto/FER-014.jpg"
+  },
+  {
+    "codigo": "FER-015",
+    "nombre": "Collar medallón",
+    "precio": 20000,
+    "descripcion": "Hecho a mano con alambre en tono dorado, con cristales y cadena bañada en oro. Diseño propio.",
+    "imagen": "assets/productos/whatsapp-auto/FER-015.jpg"
+  },
+  {
+    "codigo": "FER-016",
+    "nombre": "Conjunto corazones",
+    "precio": 11000,
+    "descripcion": "Aros + pulsera Ganchito de corazón de acero quirúrgico. Pulsera ajustable",
+    "imagen": "assets/productos/whatsapp-auto/FER-016.jpg"
+  }
+]
