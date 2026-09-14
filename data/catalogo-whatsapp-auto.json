@@ -110,5 +110,950 @@
     "precio": 11000,
     "descripcion": "Aros + pulsera Ganchito de corazón de acero quirúrgico. Pulsera ajustable",
     "imagen": "assets/productos/whatsapp-auto/FER-016.jpg"
+  },
+  {
+    "codigo": "FER-017",
+    "nombre": "Anillo Corazón",
+    "precio": 10000,
+    "descripcion": "Hecho de alambre de cobre con cristales, ajustable.",
+    "imagen": "assets/productos/whatsapp-auto/FER-017.jpg"
+  },
+  {
+    "codigo": "FER-018",
+    "nombre": "Anillo Flor",
+    "precio": 10000,
+    "descripcion": "Anillos ajustables, con alambre de cobre y cristales.",
+    "imagen": "assets/productos/whatsapp-auto/FER-018.jpg"
+  },
+  {
+    "codigo": "FER-019",
+    "nombre": "Lazos para el cabello",
+    "precio": 4500,
+    "descripcion": "Pinches para el cabello 1 unidad de cada color.",
+    "imagen": "assets/productos/whatsapp-auto/FER-019.jpg"
+  },
+  {
+    "codigo": "FER-020",
+    "nombre": "Traba media luna",
+    "precio": 4500,
+    "descripcion": "Traba para el cabello, dale un toque único a cada peinado. Disponible 1 unidad por color.",
+    "imagen": "assets/productos/whatsapp-auto/FER-020.jpg"
+  },
+  {
+    "codigo": "FER-021",
+    "nombre": "Scrunchies",
+    "precio": 2000,
+    "descripcion": "1 unidad de cada uno",
+    "imagen": "assets/productos/whatsapp-auto/FER-021.jpg"
+  },
+  {
+    "codigo": "FER-022",
+    "nombre": "Aritos Brilli",
+    "precio": 12000,
+    "descripcion": "Ganchito de acero quirúrgico, con cristales tornasol.",
+    "imagen": "assets/productos/whatsapp-auto/FER-022.jpg"
+  },
+  {
+    "codigo": "FER-023",
+    "nombre": "Aros palta",
+    "precio": 9000,
+    "descripcion": "Pin de mandala de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-023.jpg"
+  },
+  {
+    "codigo": "FER-024",
+    "nombre": "Aros flores",
+    "precio": 6000,
+    "descripcion": "ganchito de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-024.jpg"
+  },
+  {
+    "codigo": "FER-025",
+    "nombre": "Posavasos rectangulares",
+    "precio": 3500,
+    "descripcion": "$3.500 cada uno Pack de 4 $13.000 Pack de 6 $20.000 tejidos con hilo de algodón",
+    "imagen": "assets/productos/whatsapp-auto/FER-025.jpg"
+  },
+  {
+    "codigo": "FER-026",
+    "nombre": "Posavasos",
+    "precio": 3500,
+    "descripcion": "Posavasos circulares de 15 cm. de diámetro aprox. Hecho con hilo de algodón $3.500 unidad $13.000 pack de 4 $20.000 pack de 6 Disponible en color crudo y madera.",
+    "imagen": "assets/productos/whatsapp-auto/FER-026.jpg"
+  },
+  {
+    "codigo": "FER-027",
+    "nombre": "Aros de girasol",
+    "precio": 9000,
+    "descripcion": "Aros hechos con hilo encerado, con ganchito de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-027.jpg"
+  },
+  {
+    "codigo": "FER-028",
+    "nombre": "Aros rosa",
+    "precio": 5000,
+    "descripcion": "Hecho a mano con alambre de cobre y cristales, ganchito hipoalergénico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-028.jpg"
+  },
+  {
+    "codigo": "FER-029",
+    "nombre": "Aros Mandalas monocrómaticos",
+    "precio": 11000,
+    "descripcion": "Aritos tejidos con hilo encerado en la técnica de macramé, estan con ganchitos de acero quirúrgico. se pueden personalizar a tu gusto, incluyendo los ganchitos.",
+    "imagen": "assets/productos/whatsapp-auto/FER-029.jpg"
+  },
+  {
+    "codigo": "FER-030",
+    "nombre": "Aros corazón",
+    "precio": 13000,
+    "descripcion": "Pin bañado en oro.",
+    "imagen": "assets/productos/whatsapp-auto/FER-030.jpg"
+  },
+  {
+    "codigo": "FER-031",
+    "nombre": "Aros flores pequeñas",
+    "precio": 3000,
+    "descripcion": "Ganchito de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-031.jpg"
+  },
+  {
+    "codigo": "FER-032",
+    "nombre": "Aritos de piedra natural",
+    "precio": 4000,
+    "descripcion": "Aros de acero quirúrgico, pasador hipoalergénico y piedra natural. Disponibles en dorado y plateado. Lapislázuli Piedra Luna Citrino Ojo de tigre Turquesa Amatista",
+    "imagen": "assets/productos/whatsapp-auto/FER-032.jpg"
+  },
+  {
+    "codigo": "FER-033",
+    "nombre": "Pulsera mano de Fátima",
+    "precio": 4000,
+    "descripcion": "Ajustable dije bañado en oro.",
+    "imagen": "assets/productos/whatsapp-auto/FER-033.jpg"
+  },
+  {
+    "codigo": "FER-034",
+    "nombre": "Bambas",
+    "precio": 4500,
+    "descripcion": "1 unidad por color.",
+    "imagen": "assets/productos/whatsapp-auto/FER-034.jpg"
+  },
+  {
+    "codigo": "FER-035",
+    "nombre": "Girasoles",
+    "precio": 12000,
+    "descripcion": "ganchitos de plata",
+    "imagen": "assets/productos/whatsapp-auto/FER-035.jpg"
+  },
+  {
+    "codigo": "FER-036",
+    "nombre": "Pulsera árbol de la vida",
+    "precio": 4000,
+    "descripcion": "Ajustable dije bañado en oro 2 disponibles",
+    "imagen": "assets/productos/whatsapp-auto/FER-036.jpg"
+  },
+  {
+    "codigo": "FER-037",
+    "nombre": "Aros ala de ángel",
+    "precio": 11000,
+    "descripcion": "Ganchito de acero quirúrgico, con cristales.",
+    "imagen": "assets/productos/whatsapp-auto/FER-037.jpg"
+  },
+  {
+    "codigo": "FER-038",
+    "nombre": "Aros corazones multicolor",
+    "precio": 7000,
+    "descripcion": "Ganchito de acero quirúrgico",
+    "imagen": "assets/productos/whatsapp-auto/FER-038.jpg"
+  },
+  {
+    "codigo": "FER-039",
+    "nombre": "Aritos",
+    "precio": 3000,
+    "descripcion": "Dije esmaltado, ganchito hipoalergénico",
+    "imagen": "assets/productos/whatsapp-auto/FER-039.jpg"
+  },
+  {
+    "codigo": "FER-040",
+    "nombre": "Girasoles pequeños",
+    "precio": 8000,
+    "descripcion": "Ganchito de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-040.jpg"
+  },
+  {
+    "codigo": "FER-041",
+    "nombre": "Collar circular",
+    "precio": 10000,
+    "descripcion": "Collar con ágata frosted, tejido con alambre de cobre en tono plata, cadena de acero quirúrgico. mide 65 cm aproximadamente.",
+    "imagen": "assets/productos/whatsapp-auto/FER-041.jpg"
+  },
+  {
+    "codigo": "FER-042",
+    "nombre": "Aros Monsteras",
+    "precio": 8500,
+    "descripcion": "Aro s hechos con arcilla polimérica, con pasador y ganchito de acero quirúrgico. Diseños unicos 1 unidad por color.",
+    "imagen": "assets/productos/whatsapp-auto/FER-042.jpg"
+  },
+  {
+    "codigo": "FER-043",
+    "nombre": "Aros Abanicos",
+    "precio": 7500,
+    "descripcion": "Ganchito de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-043.jpg"
+  },
+  {
+    "codigo": "FER-044",
+    "nombre": "Aros Flor",
+    "precio": 9000,
+    "descripcion": "Aros tejidos con hilo encerado, ganchito de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-044.jpg"
+  },
+  {
+    "codigo": "FER-045",
+    "nombre": "Argollas girasol",
+    "precio": 9000,
+    "descripcion": "Argolla de acero quirúrgico de 5,5 cm de diámetro, tejidas con hilo encerado.",
+    "imagen": "assets/productos/whatsapp-auto/FER-045.jpg"
+  },
+  {
+    "codigo": "FER-046",
+    "nombre": "Aros atrapasueños",
+    "precio": 6000,
+    "descripcion": "Aros hechos a mano con alambre de cobre, ganchito hipoalergénico. Disponible en dorado y plateado",
+    "imagen": "assets/productos/whatsapp-auto/FER-046.jpg"
+  },
+  {
+    "codigo": "FER-047",
+    "nombre": "Aros de Colibríes",
+    "precio": 6500,
+    "descripcion": "Ganchito de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-047.jpg"
+  },
+  {
+    "codigo": "FER-048",
+    "nombre": "Aros soutache",
+    "precio": 10000,
+    "descripcion": "Pasador de acero quirúrgico con cristales.",
+    "imagen": "assets/productos/whatsapp-auto/FER-048.jpg"
+  },
+  {
+    "codigo": "FER-049",
+    "nombre": "Cangrejitos",
+    "precio": 4000,
+    "descripcion": "Aros de arcilla polimérica, pasador de acero quirúrgico, incluye tornillo.",
+    "imagen": "assets/productos/whatsapp-auto/FER-049.jpg"
+  },
+  {
+    "codigo": "FER-050",
+    "nombre": "Pulsera dije",
+    "precio": 6000,
+    "descripcion": "Ajustables Dijes y pelotitas bañadas en oro.",
+    "imagen": "assets/productos/whatsapp-auto/FER-050.jpg"
+  },
+  {
+    "codigo": "FER-051",
+    "nombre": "Conjunto circular",
+    "precio": 19000,
+    "descripcion": "Aros + anillo ajustable.",
+    "imagen": "assets/productos/whatsapp-auto/FER-051.jpg"
+  },
+  {
+    "codigo": "FER-052",
+    "nombre": "Aros flor con piedra",
+    "precio": 5000,
+    "descripcion": "Ganchito hipoalergénico, flor con cristales acompañado con una piedra natural al final. Color dorado. Disponibles en, Ojo de tigre Turquesa Piedra luna Jade Amatista Lapislázuli Jaspe rojo",
+    "imagen": "assets/productos/whatsapp-auto/FER-052.jpg"
+  },
+  {
+    "codigo": "FER-053",
+    "nombre": "Aros Lilium",
+    "precio": 7000,
+    "descripcion": "Ganchito de acero quirúrgico",
+    "imagen": "assets/productos/whatsapp-auto/FER-053.jpg"
+  },
+  {
+    "codigo": "FER-054",
+    "nombre": "Scrunchies",
+    "precio": 2000,
+    "descripcion": "1 unidad de cada color.",
+    "imagen": "assets/productos/whatsapp-auto/FER-054.jpg"
+  },
+  {
+    "codigo": "FER-055",
+    "nombre": "Aros flor",
+    "precio": 13000,
+    "descripcion": "Hechos con alambre de cobre, cristales y pin de flor bañado en oro",
+    "imagen": "assets/productos/whatsapp-auto/FER-055.jpg"
+  },
+  {
+    "codigo": "FER-056",
+    "nombre": "Pulsera chip natural",
+    "precio": 6000,
+    "descripcion": "Piedra natural chip elastica - Coralina - Lapislázuli - Amatista",
+    "imagen": "assets/productos/whatsapp-auto/FER-056.jpg"
+  },
+  {
+    "codigo": "FER-057",
+    "nombre": "Aritos Lina",
+    "precio": 7500,
+    "descripcion": "Pin de acero quirúrgico",
+    "imagen": "assets/productos/whatsapp-auto/FER-057.jpg"
+  },
+  {
+    "codigo": "FER-058",
+    "nombre": "Aros Rombo",
+    "precio": 7500,
+    "descripcion": "Ganchitos de plata",
+    "imagen": "assets/productos/whatsapp-auto/FER-058.jpg"
+  },
+  {
+    "codigo": "FER-059",
+    "nombre": "Aros piedra natural",
+    "precio": 7000,
+    "descripcion": "Piedra natural con pin bañado en oro. Ojo de tigre Jade Turquesa Cuarzo rosa",
+    "imagen": "assets/productos/whatsapp-auto/FER-059.jpg"
+  },
+  {
+    "codigo": "FER-060",
+    "nombre": "Aros circulares",
+    "precio": 10000,
+    "descripcion": "Hechos con alambre de cobre y cristales, pin de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-060.jpg"
+  },
+  {
+    "codigo": "FER-061",
+    "nombre": "Argollas",
+    "precio": 8000,
+    "descripcion": "Argollas de acero quirúrgico de 4 cm. de diámetro aprox., con mostacillas semi calibradas.",
+    "imagen": "assets/productos/whatsapp-auto/FER-061.jpg"
+  },
+  {
+    "codigo": "FER-062",
+    "nombre": "Aros mandala",
+    "precio": 8500,
+    "descripcion": "Ganchitos de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-062.jpg"
+  },
+  {
+    "codigo": "FER-063",
+    "nombre": "Traba dieciochera",
+    "precio": 4500,
+    "descripcion": "5 unidades disponibles.",
+    "imagen": "assets/productos/whatsapp-auto/FER-063.jpg"
+  },
+  {
+    "codigo": "FER-064",
+    "nombre": "Collar atrapasueño",
+    "precio": 12000,
+    "descripcion": "Collar hecho a mano con alambre de cobre, cadena de acero quirúrgico que mide 63 cm aprox. disponible en dorado y plateado.",
+    "imagen": "assets/productos/whatsapp-auto/FER-064.jpg"
+  },
+  {
+    "codigo": "FER-065",
+    "nombre": "scrunchies",
+    "precio": 2000,
+    "descripcion": "1 unidad por color.",
+    "imagen": "assets/productos/whatsapp-auto/FER-065.jpg"
+  },
+  {
+    "codigo": "FER-066",
+    "nombre": "Collar Dios",
+    "precio": 10000,
+    "descripcion": "Dije y cadena bañada en oro, con cristales.",
+    "imagen": "assets/productos/whatsapp-auto/FER-066.jpg"
+  },
+  {
+    "codigo": "FER-067",
+    "nombre": "Aros Medallón",
+    "precio": 10000,
+    "descripcion": "Hecho con alambre de cobre en tono dorado, con cristales y pasador hipoalergénico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-067.jpg"
+  },
+  {
+    "codigo": "FER-068",
+    "nombre": "Aros flores triples",
+    "precio": 7000,
+    "descripcion": "Ganchito en forma de flor de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-068.jpg"
+  },
+  {
+    "codigo": "FER-069",
+    "nombre": "Pulsera triple",
+    "precio": 5500,
+    "descripcion": "elásticada.",
+    "imagen": "assets/productos/whatsapp-auto/FER-069.jpg"
+  },
+  {
+    "codigo": "FER-070",
+    "nombre": "Anillo circular",
+    "precio": 10000,
+    "descripcion": "Hecho con alambre de cobre y cristales, ajustable.",
+    "imagen": "assets/productos/whatsapp-auto/FER-070.jpg"
+  },
+  {
+    "codigo": "FER-071",
+    "nombre": "Aros rosas",
+    "precio": 6000,
+    "descripcion": "Ganchito de plata y acero quirúrgico, lo puedes pedir personalizado con el color de tu preferencia.",
+    "imagen": "assets/productos/whatsapp-auto/FER-071.jpg"
+  },
+  {
+    "codigo": "FER-072",
+    "nombre": "Aros Margaritas",
+    "precio": 12000,
+    "descripcion": "Ganchito de plata.",
+    "imagen": "assets/productos/whatsapp-auto/FER-072.jpg"
+  },
+  {
+    "codigo": "FER-073",
+    "nombre": "Collar piedra natural",
+    "precio": 7000,
+    "descripcion": "Collar de acero quirúrgico de 50 cm aproximadamente. Piedra natural en el centro. Disponibles en plateado y dorado. Perla de Río Piedra Luna Citrino Ojo de Tigre Lapislázuli Turquesa Amatista Jade",
+    "imagen": "assets/productos/whatsapp-auto/FER-073.jpg"
+  },
+  {
+    "codigo": "FER-074",
+    "nombre": "Pulsera Ojo turco",
+    "precio": 2500,
+    "descripcion": "Pelotas de vidrio, elásticada.",
+    "imagen": "assets/productos/whatsapp-auto/FER-074.jpg"
+  },
+  {
+    "codigo": "FER-075",
+    "nombre": "Aros flor de durazno",
+    "precio": 9000,
+    "descripcion": "Ganchito de plata",
+    "imagen": "assets/productos/whatsapp-auto/FER-075.jpg"
+  },
+  {
+    "codigo": "FER-076",
+    "nombre": "Aros Corazón",
+    "precio": 6000,
+    "descripcion": "Ganchito de acero quirúrgico. Diseño propio.",
+    "imagen": "assets/productos/whatsapp-auto/FER-076.jpg"
+  },
+  {
+    "codigo": "FER-077",
+    "nombre": "Conjunto flor",
+    "precio": 22000,
+    "descripcion": "Aros + Anillo ajustable.",
+    "imagen": "assets/productos/whatsapp-auto/FER-077.jpg"
+  },
+  {
+    "codigo": "FER-078",
+    "nombre": "Aros Tortuga",
+    "precio": 8000,
+    "descripcion": "Aros hechos de arcilla polimérica con ganchito bañado en oro.",
+    "imagen": "assets/productos/whatsapp-auto/FER-078.jpg"
+  },
+  {
+    "codigo": "FER-079",
+    "nombre": "Pulsera rosa",
+    "precio": 6000,
+    "descripcion": "hecha de alambre de cobre y cristales.",
+    "imagen": "assets/productos/whatsapp-auto/FER-079.jpg"
+  },
+  {
+    "codigo": "FER-080",
+    "nombre": "Aros Lina",
+    "precio": 7500,
+    "descripcion": "Pin de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-080.jpg"
+  },
+  {
+    "codigo": "FER-081",
+    "nombre": "Aros Jazmin",
+    "precio": 7000,
+    "descripcion": "Aros de arcilla polimérica con pasador de acero quirúrgico Par único",
+    "imagen": "assets/productos/whatsapp-auto/FER-081.jpg"
+  },
+  {
+    "codigo": "FER-082",
+    "nombre": "Aritos de lavanda",
+    "precio": 9000,
+    "descripcion": "Aros hechos a mano en la técnica de macrame, con ganchito de acero quirúrgico. Diseño propio.",
+    "imagen": "assets/productos/whatsapp-auto/FER-082.jpg"
+  },
+  {
+    "codigo": "FER-083",
+    "nombre": "Aros triple corazón",
+    "precio": 4500,
+    "descripcion": "Ganchito de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-083.jpg"
+  },
+  {
+    "codigo": "FER-084",
+    "nombre": "Aros Perla de Río",
+    "precio": 6000,
+    "descripcion": "Ganchito francés de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-084.jpg"
+  },
+  {
+    "codigo": "FER-085",
+    "nombre": "Margaritas",
+    "precio": 8000,
+    "descripcion": "ganchitos de acero quirúrgico",
+    "imagen": "assets/productos/whatsapp-auto/FER-085.jpg"
+  },
+  {
+    "codigo": "FER-086",
+    "nombre": "Conjunto rosas",
+    "precio": 10000,
+    "descripcion": "Aros + pulsera hecha a mano con alambre de cobre y cristales.",
+    "imagen": "assets/productos/whatsapp-auto/FER-086.jpg"
+  },
+  {
+    "codigo": "FER-087",
+    "nombre": "Aros botón",
+    "precio": 5000,
+    "descripcion": "Pasador de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-087.jpg"
+  },
+  {
+    "codigo": "FER-088",
+    "nombre": "Pulsera dije",
+    "precio": 6000,
+    "descripcion": "Ajustable Dijes y pelotitas bañadas en oro",
+    "imagen": "assets/productos/whatsapp-auto/FER-088.jpg"
+  },
+  {
+    "codigo": "FER-089",
+    "nombre": "Aros corazón",
+    "precio": 11000,
+    "descripcion": "corazones tejidos con alambre de cobre y pin de acero quirúrgico único par.",
+    "imagen": "assets/productos/whatsapp-auto/FER-089.jpg"
+  },
+  {
+    "codigo": "FER-090",
+    "nombre": "Aros Luisa",
+    "precio": 7500,
+    "descripcion": "Ganchito de plata",
+    "imagen": "assets/productos/whatsapp-auto/FER-090.jpg"
+  },
+  {
+    "codigo": "FER-091",
+    "nombre": "Argollas Lavanda",
+    "precio": 9000,
+    "descripcion": "Argollas de acero quirúrgico de 5 cm de diámetro aprox. tejidas con hilo encerado.",
+    "imagen": "assets/productos/whatsapp-auto/FER-091.jpg"
+  },
+  {
+    "codigo": "FER-092",
+    "nombre": "Aros conejito",
+    "precio": 6500,
+    "descripcion": "Ganchito de plata.",
+    "imagen": "assets/productos/whatsapp-auto/FER-092.jpg"
+  },
+  {
+    "codigo": "FER-093",
+    "nombre": "Conjunto Piedra Natural dorado",
+    "precio": 10000,
+    "descripcion": "Conjunto de Aros + Collar Aros con pasador hipoalergénico y collar de acero quirúrgico de 50 cm, aprox. Amatista Jade Turquesa Lapislázuli Ojo de Tigre",
+    "imagen": "assets/productos/whatsapp-auto/FER-093.jpg"
+  },
+  {
+    "codigo": "FER-094",
+    "nombre": "Pulseras dobles",
+    "precio": 3500,
+    "descripcion": "ajustables.",
+    "imagen": "assets/productos/whatsapp-auto/FER-094.jpg"
+  },
+  {
+    "codigo": "FER-095",
+    "nombre": "Aros flores",
+    "precio": 8000,
+    "descripcion": "flores de cristales y pin de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-095.jpg"
+  },
+  {
+    "codigo": "FER-096",
+    "nombre": "Aros doble corazón",
+    "precio": 5500,
+    "descripcion": "Ganchito de acero quirúrgico. Diseño propio",
+    "imagen": "assets/productos/whatsapp-auto/FER-096.jpg"
+  },
+  {
+    "codigo": "FER-097",
+    "nombre": "Aritos soutache",
+    "precio": 10000,
+    "descripcion": "ganchito y pasador de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-097.jpg"
+  },
+  {
+    "codigo": "FER-098",
+    "nombre": "Argollitas mandalas",
+    "precio": 8000,
+    "descripcion": "Argollas de acero quirúrgico de 4,5 cm de diámetro, hechas a mano.",
+    "imagen": "assets/productos/whatsapp-auto/FER-098.jpg"
+  },
+  {
+    "codigo": "FER-099",
+    "nombre": "Bambas",
+    "precio": 4500,
+    "descripcion": "1 unidad por color",
+    "imagen": "assets/productos/whatsapp-auto/FER-099.jpg"
+  },
+  {
+    "codigo": "FER-100",
+    "nombre": "Aros Flor",
+    "precio": 9000,
+    "descripcion": "Aros hechos con arcilla polimérica, con pasador de acero quirúrgico. Diseño único, solo 1 par disponible.",
+    "imagen": "assets/productos/whatsapp-auto/FER-100.jpg"
+  },
+  {
+    "codigo": "FER-101",
+    "nombre": "Girasoles Grandes",
+    "precio": 15000,
+    "descripcion": "Ganchitos de plata y acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-101.jpg"
+  },
+  {
+    "codigo": "FER-102",
+    "nombre": "Aros Camino del Inca",
+    "precio": 6500,
+    "descripcion": "Ganchito de Acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-102.jpg"
+  },
+  {
+    "codigo": "FER-103",
+    "nombre": "Pulsera Corazón",
+    "precio": 5000,
+    "descripcion": "Ajustable Diseño propio. 1 Disponible.",
+    "imagen": "assets/productos/whatsapp-auto/FER-103.jpg"
+  },
+  {
+    "codigo": "FER-104",
+    "nombre": "Aros circulares",
+    "precio": 6500,
+    "descripcion": "Pin de acero quirúrgico, hecho con alambre de cobre y cristales. Foto 2 Ágatas",
+    "imagen": "assets/productos/whatsapp-auto/FER-104.jpg"
+  },
+  {
+    "codigo": "FER-105",
+    "nombre": "Pulsera ojo turco",
+    "precio": 6500,
+    "descripcion": "hecha a mano con alambre de cobre en tono dorado. También la puedes pedir en plateado.",
+    "imagen": "assets/productos/whatsapp-auto/FER-105.jpg"
+  },
+  {
+    "codigo": "FER-106",
+    "nombre": "Pin de corazones",
+    "precio": 7000,
+    "descripcion": "Hecho de alambre de cobre, con cristales y pasador hipoalergénico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-106.jpg"
+  },
+  {
+    "codigo": "FER-107",
+    "nombre": "Conjunto atrapasueños",
+    "precio": 16000,
+    "descripcion": "Collar y aros hechos a mano con alambre de cobre, pasador hipoalergénico. Cadena de acero quirúrgico de 63 cm aprox. Disponible en dorado y plateado.",
+    "imagen": "assets/productos/whatsapp-auto/FER-107.jpg"
+  },
+  {
+    "codigo": "FER-108",
+    "nombre": "Aros tortuga",
+    "precio": 6500,
+    "descripcion": "Ganchito de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-108.jpg"
+  },
+  {
+    "codigo": "FER-109",
+    "nombre": "Aros gota",
+    "precio": 10000,
+    "descripcion": "pin de acero quirúrgico y mostacillas semi calibradas.",
+    "imagen": "assets/productos/whatsapp-auto/FER-109.jpg"
+  },
+  {
+    "codigo": "FER-110",
+    "nombre": "Aros atrapasueños",
+    "precio": 9000,
+    "descripcion": "Hechos de alambre de cobre en tono rosa gold, ganchito hipoalergénico, Hojitas tejidas con hilo encerado. Diseño propio.",
+    "imagen": "assets/productos/whatsapp-auto/FER-110.jpg"
+  },
+  {
+    "codigo": "FER-111",
+    "nombre": "Aros cascadas",
+    "precio": 9000,
+    "descripcion": "Hecho de alambre de cobre con cristales y pin de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-111.jpg"
+  },
+  {
+    "codigo": "FER-112",
+    "nombre": "Aros Mariposa",
+    "precio": 8500,
+    "descripcion": "Ganchito hipoalergénico, con cristales. Diseño propio.",
+    "imagen": "assets/productos/whatsapp-auto/FER-112.jpg"
+  },
+  {
+    "codigo": "FER-113",
+    "nombre": "Argollas abeja",
+    "precio": 10000,
+    "descripcion": "Argollas de acero quirúrgico de 4 cm de diámetro. Diseño propio.",
+    "imagen": "assets/productos/whatsapp-auto/FER-113.jpg"
+  },
+  {
+    "codigo": "FER-114",
+    "nombre": "Conjunto Chip",
+    "precio": 13000,
+    "descripcion": "Aros + pulsera de piedra natural - Lapislázuli - Coralina - Amatista",
+    "imagen": "assets/productos/whatsapp-auto/FER-114.jpg"
+  },
+  {
+    "codigo": "FER-115",
+    "nombre": "Bamba pequeña",
+    "precio": 3500,
+    "descripcion": "1 unidad de cada color.",
+    "imagen": "assets/productos/whatsapp-auto/FER-115.jpg"
+  },
+  {
+    "codigo": "FER-116",
+    "nombre": "Aros media mandala",
+    "precio": 7000,
+    "descripcion": "Aritos tejidos en hilo encerado, con ganchito de acero quirúrgico (plateado) y baño de oro (dorado) se pueden personalizar a tu gusto.",
+    "imagen": "assets/productos/whatsapp-auto/FER-116.jpg"
+  },
+  {
+    "codigo": "FER-117",
+    "nombre": "Aritos Flor",
+    "precio": 8000,
+    "descripcion": "Ganchito de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-117.jpg"
+  },
+  {
+    "codigo": "FER-118",
+    "nombre": "Bambas diciocheras",
+    "precio": 4500,
+    "descripcion": "Disponibles 2 unidades por color.",
+    "imagen": "assets/productos/whatsapp-auto/FER-118.jpg"
+  },
+  {
+    "codigo": "FER-119",
+    "nombre": "Pulsera corazones",
+    "precio": 7000,
+    "descripcion": "Pulsera de piedra natural y corazones, hechos de alambre en tono plateado. Ágata frosted Ónix Piedra luna",
+    "imagen": "assets/productos/whatsapp-auto/FER-119.jpg"
+  },
+  {
+    "codigo": "FER-120",
+    "nombre": "Aros Anaís",
+    "precio": 6500,
+    "descripcion": "Ganchito de acero quirúrgico Diseño propio",
+    "imagen": "assets/productos/whatsapp-auto/FER-120.jpg"
+  },
+  {
+    "codigo": "FER-121",
+    "nombre": "Pulsera concha",
+    "precio": 2000,
+    "descripcion": "ajustable.",
+    "imagen": "assets/productos/whatsapp-auto/FER-121.jpg"
+  },
+  {
+    "codigo": "FER-122",
+    "nombre": "Aritos circulares",
+    "precio": 9000,
+    "descripcion": "Aritos tejidos con hilo encerado en la tecnica de macrame, ganchitos de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-122.jpg"
+  },
+  {
+    "codigo": "FER-123",
+    "nombre": "Pulsera doble",
+    "precio": 3500,
+    "descripcion": "elásticadas",
+    "imagen": "assets/productos/whatsapp-auto/FER-123.jpg"
+  },
+  {
+    "codigo": "FER-124",
+    "nombre": "Conjunto corazón",
+    "precio": 20000,
+    "descripcion": "Aros + anillo ajustable.",
+    "imagen": "assets/productos/whatsapp-auto/FER-124.jpg"
+  },
+  {
+    "codigo": "FER-125",
+    "nombre": "Pulsera pareja",
+    "precio": 8000,
+    "descripcion": "Ajustables con piedra volcánica y howlita.",
+    "imagen": "assets/productos/whatsapp-auto/FER-125.jpg"
+  },
+  {
+    "codigo": "FER-126",
+    "nombre": "Pulsera 7 chackras",
+    "precio": 8000,
+    "descripcion": "elásticada",
+    "imagen": "assets/productos/whatsapp-auto/FER-126.jpg"
+  },
+  {
+    "codigo": "FER-127",
+    "nombre": "Aros mandala",
+    "precio": 8000,
+    "descripcion": "Pin de acero quirúrgico en forma de mandala.",
+    "imagen": "assets/productos/whatsapp-auto/FER-127.jpg"
+  },
+  {
+    "codigo": "FER-128",
+    "nombre": "Aros Chilco",
+    "precio": 8000,
+    "descripcion": "Ganchito de acero quirúrgico Diseño propio. 2 disponibles.",
+    "imagen": "assets/productos/whatsapp-auto/FER-128.jpg"
+  },
+  {
+    "codigo": "FER-129",
+    "nombre": "Corazones craquelados",
+    "precio": 5000,
+    "descripcion": "Pegados al lóbulo de la oreja, pasador de acero quirúrgico",
+    "imagen": "assets/productos/whatsapp-auto/FER-129.jpg"
+  },
+  {
+    "codigo": "FER-130",
+    "nombre": "Aros Corazón",
+    "precio": 11000,
+    "descripcion": "Hechos de alambre de cobre y cristales. Pin de acero quirúrgico (plateado) Pin bañado en oro (dorado)",
+    "imagen": "assets/productos/whatsapp-auto/FER-130.jpg"
+  },
+  {
+    "codigo": "FER-131",
+    "nombre": "Aros Alas de ángel",
+    "precio": 9000,
+    "descripcion": "Aros con cristales Ganchitos de acero quirúrgico (plateados) Ganchitos bañados en oro (dorados) Se pueden personalizar con el/los color/colores de tu preferencia.",
+    "imagen": "assets/productos/whatsapp-auto/FER-131.jpg"
+  },
+  {
+    "codigo": "FER-132",
+    "nombre": "Conjunto medallón",
+    "precio": 29000,
+    "descripcion": "Aros + collar diseño propio.",
+    "imagen": "assets/productos/whatsapp-auto/FER-132.jpg"
+  },
+  {
+    "codigo": "FER-133",
+    "nombre": "Bamba pequeña",
+    "precio": 3500,
+    "descripcion": "1 unidad por color",
+    "imagen": "assets/productos/whatsapp-auto/FER-133.jpg"
+  },
+  {
+    "codigo": "FER-134",
+    "nombre": "Aros Corazón",
+    "precio": 7000,
+    "descripcion": "Hechos con alambre de cobre en tono rosa gold, pegados al lóbulo de la oreja con pasador hipoalergénico. Diseño propio. 1 par de cada color.",
+    "imagen": "assets/productos/whatsapp-auto/FER-134.jpg"
+  },
+  {
+    "codigo": "FER-135",
+    "nombre": "Pulsera ágata",
+    "precio": 3000,
+    "descripcion": "elásticada.",
+    "imagen": "assets/productos/whatsapp-auto/FER-135.jpg"
+  },
+  {
+    "codigo": "FER-136",
+    "nombre": "Aros Ema",
+    "precio": 7000,
+    "descripcion": "ganchito de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-136.jpg"
+  },
+  {
+    "codigo": "FER-137",
+    "nombre": "Aros Lis",
+    "precio": 8000,
+    "descripcion": "Pin de acero quirúrgico. Hechos con alambre de cobre y cristales.",
+    "imagen": "assets/productos/whatsapp-auto/FER-137.jpg"
+  },
+  {
+    "codigo": "FER-138",
+    "nombre": "Conjunto perla de río",
+    "precio": 13000,
+    "descripcion": "Pulsera + aros.",
+    "imagen": "assets/productos/whatsapp-auto/FER-138.jpg"
+  },
+  {
+    "codigo": "FER-139",
+    "nombre": "Aros Sara",
+    "precio": 7500,
+    "descripcion": "Ganchitos de plata Diseño propio.",
+    "imagen": "assets/productos/whatsapp-auto/FER-139.jpg"
+  },
+  {
+    "codigo": "FER-140",
+    "nombre": "Aros conchita",
+    "precio": 9000,
+    "descripcion": "Aros de arcilla polimérica, con perla de rio y pin de acero quirúrgico (plateado) y baño de oro (dorado)",
+    "imagen": "assets/productos/whatsapp-auto/FER-140.jpg"
+  },
+  {
+    "codigo": "FER-141",
+    "nombre": "Pulsera",
+    "precio": 2000,
+    "descripcion": "elásticadas.",
+    "imagen": "assets/productos/whatsapp-auto/FER-141.jpg"
+  },
+  {
+    "codigo": "FER-142",
+    "nombre": "Aritos Soutache",
+    "precio": 6000,
+    "descripcion": "Pegados al lóbulo, pasador de acero quirúrgico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-142.jpg"
+  },
+  {
+    "codigo": "FER-143",
+    "nombre": "Aros chip",
+    "precio": 8000,
+    "descripcion": "Piedra chip natural, ganchito hipoalergénico. - Coralina - Lapislázuli - Amatista",
+    "imagen": "assets/productos/whatsapp-auto/FER-143.jpg"
+  },
+  {
+    "codigo": "FER-144",
+    "nombre": "Aros gota cristal",
+    "precio": 7500,
+    "descripcion": "Pin de acero quirúrgico (plateado) y bañado en oro (dorado) con piedra natural y cristal en gota. - Piedra luna - Jade - Ojo de tigre - Lapislázuli - Amatista",
+    "imagen": "assets/productos/whatsapp-auto/FER-144.jpg"
+  },
+  {
+    "codigo": "FER-145",
+    "nombre": "Pulsera cristales",
+    "precio": 5000,
+    "descripcion": "Ajustable con dije bañado en oro. 2 disponibles.",
+    "imagen": "assets/productos/whatsapp-auto/FER-145.jpg"
+  },
+  {
+    "codigo": "FER-146",
+    "nombre": "Aros Mandalas",
+    "precio": 8500,
+    "descripcion": "Aros hechos a mano en la técnica de macrame, pin de corazón de acero quirúrgico. Diseño propio.",
+    "imagen": "assets/productos/whatsapp-auto/FER-146.jpg"
+  },
+  {
+    "codigo": "FER-147",
+    "nombre": "Pulsera perla de río",
+    "precio": 8000,
+    "descripcion": "Hecha de alambre de cobre y perlas de río. Disponible en dorado y plateado.",
+    "imagen": "assets/productos/whatsapp-auto/FER-147.jpg"
+  },
+  {
+    "codigo": "FER-148",
+    "nombre": "Aros corazón",
+    "precio": 9000,
+    "descripcion": "Hechos con alambre de cobre y cristales, pasador hipoalergénico.",
+    "imagen": "assets/productos/whatsapp-auto/FER-148.jpg"
+  },
+  {
+    "codigo": "FER-149",
+    "nombre": "Conjunto Piedra Natural plateado",
+    "precio": 10000,
+    "descripcion": "Conjunto de collar + aros con piedra natural Aros con pasador hipoalergénico y collar de 50 cm aprox. de largo. Piedra Luna Citrino Ojo de tigre Turquesa",
+    "imagen": "assets/productos/whatsapp-auto/FER-149.jpg"
+  },
+  {
+    "codigo": "FER-150",
+    "nombre": "Aros circulares",
+    "precio": 5000,
+    "descripcion": "Pin de acero quirúrgico",
+    "imagen": "assets/productos/whatsapp-auto/FER-150.jpg"
+  },
+  {
+    "codigo": "FER-151",
+    "nombre": "Pulsera San Benito",
+    "precio": 5000,
+    "descripcion": "Ajustable Dije bañado en oro 4 disponibles",
+    "imagen": "assets/productos/whatsapp-auto/FER-151.jpg"
   }
 ]
