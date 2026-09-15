@@ -1,0 +1,160 @@
+/* FER Accesorios — corrección móvil robusta 2026-09-15 */
+@media (max-width:820px){
+  .favorites-drawer{width:100vw;max-width:none;left:0;right:0}
+  .modal{padding:0;align-items:stretch;justify-content:stretch}
+  .modal-card{width:100vw;max-width:none;height:100dvh;max-height:none;border-radius:0;grid-template-columns:1fr;grid-template-rows:42dvh minmax(0,1fr);overflow:hidden}
+  .modal-image{min-height:0!important;max-height:none!important;height:42dvh!important}
+  .modal-image>img{width:100%!important;height:100%!important;max-height:100%!important;object-fit:contain!important}
+  .modal-content{min-height:0;overflow-y:auto;padding:24px 18px 110px}
+  .related-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+/* Algunos navegadores Android abren páginas en un viewport tipo escritorio.
+   Este bloque fuerza una experiencia móvil real en dispositivos táctiles pequeños. */
+@media (hover:none) and (pointer:coarse) and (max-device-width:600px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  body{padding-bottom:15vw;font-size:3.2vw}
+  .announcement{padding:2.4vw 3vw;font-size:2vw;letter-spacing:.12em}
+  .nav{height:15vw;padding:0 4vw}
+  .brand{font-size:6vw}
+  .brand small{font-size:2vw}
+  .navlinks{gap:2vw}
+  .navlinks a:not(.wa),.nav-fav{display:none!important}
+  .navlinks .wa{display:inline-flex!important;padding:2.8vw 3.4vw;font-size:2.5vw}
+
+  .hero{display:grid!important;grid-template-columns:1fr!important;gap:6vw;padding:10vw 4vw 12vw}
+  .hero-copy{max-width:none}
+  .hero h1{font-size:12vw!important;line-height:.95;margin:3vw 0 5vw}
+  .hero-copy>p:not(.eyebrow){font-size:3.7vw;line-height:1.6;max-width:none}
+  .eyebrow{font-size:2.2vw;letter-spacing:.18em}
+  .hero-actions{gap:2.2vw;margin-top:5vw}
+  .btn{padding:3.2vw 4.2vw;font-size:2.8vw}
+  .hero-stats{gap:4vw;margin-top:6vw}
+  .hero-stat{min-width:27vw}
+  .hero-stat b{font-size:7vw}
+  .hero-stat span{font-size:2.1vw}
+  .hero-gallery{height:92vw;gap:2vw;grid-template-columns:1.08fr .92fr}
+  .hero-card{border-radius:4vw}
+  .hero-label{left:2.4vw;right:2.4vw;bottom:2.4vw;padding:2.4vw 2.8vw;border-radius:3vw}
+  .hero-label b{font-size:4vw}
+  .hero-label span{font-size:2.5vw}
+
+  .strip{padding:3vw 4vw;font-size:2.5vw}
+  .section{padding:12vw 4vw}
+  .sectionhead{display:block!important;margin-bottom:6vw}
+  .sectionhead h2{font-size:10vw!important;margin-top:1.5vw}
+  .sectionhead>p{font-size:3.4vw;line-height:1.6;margin-top:4vw;max-width:none}
+  .featured{grid-template-columns:1fr!important;gap:3vw}
+  .featured-card,.featured-card:first-child{grid-column:auto!important;min-height:78vw!important;border-radius:4vw}
+  .featured-overlay{padding:4vw}
+  .featured-overlay b{font-size:5.4vw}
+  .featured-overlay span{font-size:2.7vw}
+
+  .collection-cards{grid-template-columns:1fr 1fr!important;gap:2vw;margin-top:4vw}
+  .collection-card{min-height:31vw;padding:3.4vw;border-radius:4vw}
+  .collection-card b{font-size:5vw}
+  .collection-card span{font-size:2.5vw}
+  .collection-card strong{font-size:2vw}
+  .rail-wrap{gap:8vw}
+  .rail-head{margin-bottom:3vw}
+  .rail-head h3{font-size:6vw}
+  .rail-head p{font-size:2.7vw}
+  .rail-link{font-size:2.5vw}
+  .product-rail{grid-auto-columns:72vw;gap:3vw}
+  .rail-card{border-radius:4vw}
+  .rail-card-copy{padding:3vw}
+  .rail-card-copy b{font-size:4.5vw}
+  .rail-card-copy span{font-size:2.8vw}
+  .favorite-btn,.rail-heart{width:9vw;height:9vw;font-size:4.2vw}
+
+  .catalog-toolbar.v2{position:static!important;display:grid;grid-template-columns:1fr 1fr!important;gap:2vw;padding:2.5vw;border-radius:4vw;margin-bottom:5vw}
+  .catalog-toolbar.v2 .search{grid-column:1/-1!important}
+  .search input,.catalog-toolbar select{min-height:11vw;font-size:3vw;border-radius:999px}
+  .search input{padding:2.8vw 4vw 2.8vw 9vw}
+  .search:before{left:3.5vw;top:1.6vw;font-size:6vw}
+  .search-suggestions{top:12vw;border-radius:3vw}
+  .suggestion{grid-template-columns:11vw 1fr auto;gap:2vw;padding:2vw}
+  .suggestion img{width:11vw;height:11vw;border-radius:2vw}
+  .suggestion b{font-size:2.8vw}
+  .suggestion span{font-size:2.5vw}
+  .filters,.tag-filters{gap:2vw;padding-bottom:3vw}
+  .chip,.tag-chip{padding:2.2vw 3vw;font-size:2.5vw}
+  .catalog-meta span{font-size:2.6vw}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:2.2vw}
+  .card{border-radius:3.5vw}
+  .card-body{padding:2.8vw}
+  .card-category{font-size:2vw}
+  .card-title{font-size:4vw;min-height:9vw}
+  .price{font-size:3.4vw;margin:1.5vw 0}
+  .description{display:none!important}
+  .small-btn{font-size:2.5vw;padding:2.3vw 2vw}
+  .card-actions.v2{grid-template-columns:1fr!important;gap:1.5vw}
+  .card-actions.v2 .small-btn.wa{grid-column:auto}
+  .code-tag{left:2vw;top:2vw;padding:1.6vw 2vw;font-size:2vw}
+  .photo-count{right:2vw;bottom:2vw;padding:1.5vw 2vw;font-size:2vw}
+  .card:hover .photo.has-second .primary-image{opacity:1!important}
+  .card:hover .photo.has-second .secondary-image{opacity:0!important}
+
+  .steps{grid-template-columns:1fr!important}
+  .step{padding:5vw 1vw!important;border-right:0!important;border-bottom:1px solid var(--line)}
+  .step b{font-size:8vw}
+  .step h3{font-size:6vw}
+  .step p{font-size:3.2vw}
+  .cta{padding:14vw 4vw}
+  .cta h2{font-size:10vw}
+  .cta p{font-size:3.2vw}
+  footer{padding:10vw 5vw 20vw;flex-direction:column;text-align:center;font-size:2.6vw}
+
+  .mobile-nav{display:grid!important;grid-template-columns:repeat(4,1fr)!important;height:15vw}
+  .mobile-nav a{font-size:2.4vw}
+  .mobile-fav-count{font-size:1.9vw;padding:.7vw 1.2vw}
+  .favorite-floating{display:none!important}
+
+  .favorites-overlay{display:none!important}
+  .favorites-drawer{left:0!important;right:0!important;top:0!important;bottom:0!important;width:100vw!important;max-width:none!important;height:100dvh!important;transform:translateY(102%)!important;box-shadow:none!important}
+  .favorites-drawer.open{transform:translateY(0)!important}
+  .favorites-head{padding:5vw;border-bottom:1px solid var(--line)}
+  .favorites-head h3{font-size:7vw}
+  .favorites-close{width:10vw;height:10vw;font-size:5vw}
+  .favorites-list{padding:3vw 4vw}
+  .favorite-row{grid-template-columns:18vw 1fr 9vw;gap:3vw;padding:3vw 0}
+  .favorite-row img{width:18vw;height:18vw;border-radius:3vw}
+  .favorite-row b{font-size:4.3vw}
+  .favorite-row span{font-size:2.7vw}
+  .favorite-remove{font-size:5vw}
+  .favorites-empty{padding:15vw 5vw;font-size:3.2vw}
+  .favorites-foot{padding:4vw 4vw calc(4vw + env(safe-area-inset-bottom))}
+  .favorites-foot .btn{font-size:3vw;padding:3.5vw}
+  .favorites-foot small{font-size:2.5vw}
+
+  .modal{padding:0!important;align-items:stretch!important;justify-content:stretch!important;background:var(--paper)!important;backdrop-filter:none!important}
+  .modal-card{width:100vw!important;max-width:none!important;height:100dvh!important;max-height:none!important;border-radius:0!important;display:flex!important;flex-direction:column!important;grid-template-columns:none!important;overflow:hidden!important;box-shadow:none!important}
+  .modal-image{flex:0 0 44dvh!important;height:44dvh!important;min-height:0!important;max-height:none!important;background:#f3e8e3!important;position:relative!important}
+  .modal-image>img{width:100%!important;height:100%!important;max-height:100%!important;object-fit:contain!important}
+  .modal-content{flex:1 1 auto!important;min-height:0!important;overflow-y:auto!important;padding:5vw 4vw 24vw!important}
+  .modal-content h3{font-size:7.5vw!important;margin:1.5vw 0 2vw}
+  .modal-price{font-size:5vw!important;margin-bottom:3vw}
+  .modal-description{font-size:3.2vw!important;line-height:1.6}
+  .availability-pill{padding:1.8vw 2.4vw;font-size:2.4vw;margin-bottom:3vw}
+  .product-tags{gap:1.5vw;margin:3vw 0}
+  .product-tag{padding:1.7vw 2.2vw;font-size:2.2vw}
+  .meta-grid{grid-template-columns:1fr 1fr;gap:2vw;margin:4vw 0}
+  .meta{padding:3vw;border-radius:3vw}
+  .meta small{font-size:2vw}
+  .meta b{font-size:2.8vw}
+  .modal-fav{padding:3vw;font-size:2.8vw;margin-bottom:2vw}
+  .modal-actions{grid-template-columns:1fr!important;gap:2vw}
+  .modal-actions .wa{grid-column:auto!important;position:sticky!important;bottom:1vw!important;padding:3.6vw!important;font-size:3vw!important}
+  .related-block{margin-top:6vw;padding-top:5vw}
+  .related-block h4{font-size:6vw}
+  .related-grid{grid-template-columns:repeat(3,1fr)!important;gap:2vw}
+  .related-card:nth-child(4){display:none}
+  .related-card span{font-size:2.2vw;padding:2vw}
+  .close{right:3vw;top:3vw;width:10vw;height:10vw;font-size:5vw}
+  .gallery-arrow{width:10vw!important;height:10vw!important;font-size:6vw!important}
+  .gallery-prev{left:3vw!important}.gallery-next{right:3vw!important}
+  .gallery-counter{top:3vw!important;left:3vw!important;padding:1.6vw 2.2vw!important;font-size:2.2vw!important}
+  .modal-thumbs{left:3vw!important;right:3vw!important;bottom:2vw!important;gap:1.5vw!important}
+  .modal-thumb{flex-basis:12vw!important;width:12vw!important;height:12vw!important;border-radius:2vw!important}
+  .toast{bottom:18vw;font-size:2.7vw;padding:2.5vw 3.5vw}
+}
