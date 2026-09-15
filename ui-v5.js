@@ -17,6 +17,13 @@
       script.defer=true;
       (document.body||document.documentElement).appendChild(script);
     }
+    if(!document.querySelector('script[data-fer-cart-wa]')){
+      const fix=document.createElement('script');
+      fix.src='cart-wa-fix.js?v=20260915-cart-selection-v2';
+      fix.dataset.ferCartWa='1';
+      fix.defer=true;
+      (document.body||document.documentElement).appendChild(fix);
+    }
   }
 
   function applyBranding(){
