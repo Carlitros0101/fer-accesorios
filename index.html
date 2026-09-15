@@ -4,25 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#fffaf7">
-<meta name="description" content="Fer Accesorios: catálogo de accesorios artesanales con precios y consulta directa por WhatsApp.">
+<meta name="description" content="Fer Accesorios: catálogo de accesorios artesanales, favoritos y consulta directa por WhatsApp.">
 <meta property="og:title" content="Fer Accesorios | Catálogo">
-<meta property="og:description" content="Descubre accesorios artesanales, revisa precios y consulta cada diseño directamente por WhatsApp.">
+<meta property="og:description" content="Descubre accesorios artesanales, guarda favoritos y consulta tus diseños por WhatsApp.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://carlitros0101.github.io/fer-accesorios/">
 <meta property="og:image" content="https://carlitros0101.github.io/fer-accesorios/assets/productos/whatsapp-auto/FER-001.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://carlitros0101.github.io/fer-accesorios/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%236e3242'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='34' fill='white' font-family='Georgia'%3EF%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="catalogo-site.css?v=20260915-final-151">
+<link rel="stylesheet" href="catalogo-site.css?v=20260915-store-v2">
+<link rel="stylesheet" href="tienda-v2.css?v=20260915-store-v2">
 <title>Fer Accesorios | Catálogo</title>
 </head>
 <body>
-<div class="announcement">CATÁLOGO FER ACCESORIOS · PRECIOS DISPONIBLES · CONSULTA DIRECTA POR WHATSAPP</div>
+<div class="announcement">CATÁLOGO FER ACCESORIOS · HECHO A MANO · GUARDA TUS FAVORITOS · CONSULTA POR WHATSAPP</div>
 <header class="nav">
   <a class="brand" href="#inicio">FER <small>accesorios</small></a>
   <nav class="navlinks" aria-label="Principal">
     <a href="#catalogo">Catálogo</a>
+    <a href="#colecciones">Colecciones</a>
     <a href="https://www.instagram.com/fer_accesorioss_/" target="_blank" rel="noopener">Instagram</a>
+    <button class="nav-fav" id="favoritesNav">♥ Favoritos <b data-fav-count>0</b></button>
     <a class="wa" href="https://wa.me/c/56964133598" target="_blank" rel="noopener">WhatsApp ↗</a>
   </nav>
 </header>
@@ -31,14 +34,15 @@
   <div class="hero-copy">
     <p class="eyebrow">FER ACCESORIOS</p>
     <h1>Encuentra tu<br><em>próximo favorito.</em></h1>
-    <p>Explora el catálogo completo, revisa precios y consulta cada pieza directamente por WhatsApp.</p>
+    <p>Explora el catálogo completo, filtra por estilo o precio, guarda tus favoritos y consulta tus diseños directamente por WhatsApp.</p>
     <div class="hero-actions">
       <a class="btn" href="#catalogo">Explorar catálogo</a>
-      <a class="btn wa" href="https://wa.me/c/56964133598" target="_blank" rel="noopener">Abrir WhatsApp</a>
+      <button class="btn secondary" id="favoritesHero" onclick="document.getElementById('favoritesNav').click()">♥ Ver favoritos</button>
     </div>
     <div class="hero-stats">
       <div class="hero-stat"><b id="statProducts">—</b><span>diseños en catálogo</span></div>
       <div class="hero-stat"><b id="statCategories">—</b><span>categorías</span></div>
+      <div class="hero-stat"><b id="statFavorites">0</b><span>favoritos guardados</span></div>
     </div>
   </div>
   <div class="hero-gallery" id="heroGallery" aria-label="Productos destacados"></div>
@@ -47,21 +51,37 @@
 <section class="section dark" id="novedades">
   <div class="sectionhead">
     <div><p class="eyebrow">SELECCIÓN DESTACADA</p><h2>Para descubrir.</h2></div>
-    <p>Una selección visual de piezas del catálogo. Abre cualquier diseño para ver su precio, descripción y acceso directo a WhatsApp.</p>
+    <p>Abre cualquier diseño para revisar sus fotos, descripción, materiales, disponibilidad y productos relacionados.</p>
   </div>
   <div class="featured" id="featuredGrid"></div>
+</section>
+<section class="section commercial" id="colecciones">
+  <div class="sectionhead">
+    <div><p class="eyebrow">COMPRA A TU MANERA</p><h2>Colecciones para elegir.</h2></div>
+    <p>Encuentra más rápido lo que buscas: por tipo de accesorio, material o presupuesto.</p>
+  </div>
+  <div class="collection-cards" id="collectionCards"></div>
+  <div class="rail-wrap" style="margin-top:50px">
+    <div><div class="rail-head"><div><h3>Nuevos y destacados</h3><p>Una selección para empezar a explorar.</p></div></div><div class="product-rail" id="railNew"></div></div>
+    <div><div class="rail-head"><div><h3>Regalos hasta $10.000</h3><p>Ideas simples para regalar o darte un gusto.</p></div><button class="rail-link" data-collection="price:5001-10000">Ver todos →</button></div><div class="product-rail" id="railGifts"></div></div>
+    <div><div class="rail-head"><div><h3>Piedras naturales</h3><p>Diseños con amatista, jade, cuarzo y otras piedras.</p></div><button class="rail-link" data-collection="tag:Piedra natural">Ver todos →</button></div><div class="product-rail" id="railStones"></div></div>
+    <div><div class="rail-head"><div><h3>Hecho a mano</h3><p>Texturas, tejidos, alambre y detalles con identidad propia.</p></div><button class="rail-link" data-collection="tag:Hecho a mano">Ver todos →</button></div><div class="product-rail" id="railHandmade"></div></div>
+  </div>
 </section>
 <section class="section catalog-section" id="catalogo">
   <div class="sectionhead">
     <div><p class="eyebrow">CATÁLOGO COMPLETO</p><h2>Explora los diseños.</h2></div>
-    <p>Busca por nombre, filtra por tipo de accesorio y ordena la colección. Las fotografías y precios provienen del catálogo actual de Fer.</p>
+    <p>Busca por nombre, material o característica. Combina categoría, rango de precio y estilo.</p>
   </div>
-  <div class="catalog-toolbar">
-    <label class="search"><input id="searchInput" type="search" placeholder="Buscar: girasol, pulsera, collar…" autocomplete="off" aria-label="Buscar productos"></label>
+  <div class="catalog-toolbar v2">
+    <label class="search"><input id="searchInput" type="search" placeholder="Buscar: corazón, azul, acero, piedra…" autocomplete="off" aria-label="Buscar productos"><div class="search-suggestions" id="searchSuggestions"></div></label>
     <select id="categorySelect" aria-label="Categoría"></select>
+    <select id="priceSelect" aria-label="Precio"><option value="Todos">Todos los precios</option><option value="0-5000">Hasta $5.000</option><option value="5001-10000">$5.001 – $10.000</option><option value="10001-15000">$10.001 – $15.000</option><option value="15001+">Más de $15.000</option></select>
+    <select id="tagSelect" aria-label="Material o estilo"></select>
     <select id="sortSelect" aria-label="Ordenar"><option value="order">Recomendados</option><option value="price-asc">Precio: menor a mayor</option><option value="price-desc">Precio: mayor a menor</option><option value="name">Nombre A–Z</option></select>
   </div>
   <div class="filters" id="chips"></div>
+  <div class="tag-filters" id="tagChips"></div>
   <div class="catalog-meta"><span id="resultCount"></span><span id="showingCount"></span></div>
   <div class="grid" id="productGrid"></div>
   <div class="empty" id="emptyState">No encontramos productos con esos filtros.</div>
@@ -70,15 +90,22 @@
 <section class="section buy" id="como-comprar">
   <div class="sectionhead"><div><p class="eyebrow">COMPRA SIMPLE</p><h2>¿Cómo consultar?</h2></div></div>
   <div class="steps">
-    <article class="step"><b>01</b><h3>Explora</h3><p>Busca el diseño que te interese y abre su ficha para ver los detalles.</p></article>
-    <article class="step"><b>02</b><h3>Consulta</h3><p>Usa el botón de WhatsApp de la ficha. El mensaje incluye automáticamente el producto y su código.</p></article>
-    <article class="step"><b>03</b><h3>Confirma</h3><p>Fer podrá confirmar disponibilidad y coordinar contigo los detalles del pedido.</p></article>
+    <article class="step"><b>01</b><h3>Explora</h3><p>Busca por nombre, categoría, precio o material y revisa todas las fotografías.</p></article>
+    <article class="step"><b>02</b><h3>Guarda</h3><p>Marca ♥ para reunir tus favoritos. Se guardan en este dispositivo, sin crear una cuenta.</p></article>
+    <article class="step"><b>03</b><h3>Consulta</h3><p>Envía un producto o toda tu selección de favoritos directamente por WhatsApp.</p></article>
   </div>
 </section>
-<section class="cta"><p class="eyebrow">FER ACCESORIOS</p><h2>¿Viste uno que te gustó?</h2><p>Escríbenos directamente y consulta por el diseño.</p><a class="btn" href="https://wa.me/56964133598" target="_blank" rel="noopener">Hablar por WhatsApp ↗</a></section>
+<section class="cta"><p class="eyebrow">FER ACCESORIOS</p><h2>¿Ya elegiste tus favoritos?</h2><p>Guárdalos y envía toda tu selección en un solo mensaje.</p><button class="btn" onclick="document.getElementById('favoritesNav').click()">♥ Abrir mis favoritos</button></section>
 </main>
 <footer><span class="brand">FER <small>accesorios</small></span><span>Accesorios artesanales</span><span>© 2026 Fer Accesorios</span></footer>
-<nav class="mobile-nav" aria-label="Navegación móvil"><a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a><a href="https://wa.me/56964133598" target="_blank" rel="noopener">WhatsApp</a></nav>
+<nav class="mobile-nav" aria-label="Navegación móvil"><a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a><a href="#" id="mobileFavorites">Favoritos <span class="mobile-fav-count" data-fav-count>0</span></a><a href="https://wa.me/56964133598" target="_blank" rel="noopener">WhatsApp</a></nav>
+<button class="favorite-floating" id="favoritesFloating">♥ Favoritos <b data-fav-count>0</b></button>
+<div class="favorites-overlay" id="favoritesOverlay"></div>
+<aside class="favorites-drawer" id="favoritesDrawer" aria-label="Favoritos">
+  <div class="favorites-head"><h3>Mis favoritos</h3><button class="favorites-close" id="favoritesClose" aria-label="Cerrar">×</button></div>
+  <div class="favorites-list" id="favoritesList"></div>
+  <div class="favorites-foot"><a class="btn wa" id="favoritesWhatsApp" href="#" target="_blank" rel="noopener">Consultar selección por WhatsApp</a><small id="favoritesFootText"></small></div>
+</aside>
 <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
   <div class="modal-card">
     <button class="close" id="closeModal" aria-label="Cerrar">×</button>
@@ -87,15 +114,18 @@
       <p class="eyebrow" id="modalCode"></p>
       <h3 id="modalTitle"></h3>
       <p class="modal-price" id="modalPrice"></p>
+      <span class="availability-pill" id="modalAvailability"></span>
       <p class="modal-description" id="modalDescription"></p>
-      <div class="meta-grid"><div class="meta"><small>REFERENCIA</small><b id="metaCode"></b></div><div class="meta"><small>DISPONIBILIDAD</small><b>Consultar</b></div></div>
+      <div class="product-tags" id="productTags"></div>
+      <div class="meta-grid"><div class="meta"><small>REFERENCIA</small><b id="metaCode"></b></div><div class="meta"><small>DISPONIBILIDAD</small><b id="metaAvailability"></b></div></div>
+      <button class="modal-fav" id="modalFavorite">♡ Agregar a favoritos</button>
       <div class="modal-actions"><a class="btn wa" id="waConsult" href="#" target="_blank" rel="noopener">Consultar por WhatsApp</a><button class="btn secondary" id="shareProduct">Compartir</button><button class="btn secondary" id="copyLink">Copiar enlace</button></div>
+      <div class="related-block"><h4>También te puede gustar</h4><div class="related-grid" id="relatedGrid"></div></div>
     </div>
   </div>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="catalogo.js?v=20260915-final-151"></script>
-<script src="catalogo-site.js?v=20260915-final-151"></script>
-<script src="catalogo-gallery-refresh.js?v=20260915-final-151"></script>
+<script src="catalogo.js?v=20260915-store-v2"></script>
+<script src="tienda-v2.js?v=20260915-store-v2"></script>
 </body>
 </html>
