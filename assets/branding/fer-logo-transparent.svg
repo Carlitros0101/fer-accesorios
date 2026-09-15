@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">FER Accesorios</title>
+  <desc id="desc">Logo transparente de FER Accesorios</desc>
+  <g fill="none" stroke="#c89a48" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".95">
+    <path d="M235 110c110-80 250-72 346-30 88 39 151 32 214 18 72-16 135 1 168 53 32 50 24 111-10 151-29 35-66 47-102 54"/>
+    <path d="M212 212c119-78 267-58 365-28 89 27 153 21 215-6 62-27 120-14 151 26"/>
+    <path d="M789 167c-11 29-5 65 26 91 27 22 61 30 96 36-16 30-47 49-86 54-53 7-92-13-126-51-34-39-70-56-119-56"/>
+    <path d="M820 265c-6 23 1 45 18 61 14 13 34 20 56 21"/>
+    <path d="M360 332c63-31 130-36 194-15 54 18 99 50 142 94"/>
+  </g>
+  <g transform="translate(485 354)">
+    <g fill="#d8b56d" stroke="#b98b35" stroke-width="3">
+      <ellipse rx="18" ry="46" transform="rotate(0) translate(0 -32)"/>
+      <ellipse rx="18" ry="46" transform="rotate(45) translate(0 -32)"/>
+      <ellipse rx="18" ry="46" transform="rotate(90) translate(0 -32)"/>
+      <ellipse rx="18" ry="46" transform="rotate(135) translate(0 -32)"/>
+      <ellipse rx="18" ry="46" transform="rotate(180) translate(0 -32)"/>
+      <ellipse rx="18" ry="46" transform="rotate(225) translate(0 -32)"/>
+      <ellipse rx="18" ry="46" transform="rotate(270) translate(0 -32)"/>
+      <ellipse rx="18" ry="46" transform="rotate(315) translate(0 -32)"/>
+      <circle r="23" fill="#c89a48"/>
+    </g>
+  </g>
+  <text x="500" y="335" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="250" font-weight="300" letter-spacing="8" fill="#2b2627">FER</text>
+  <text x="500" y="495" text-anchor="middle" font-family="Brush Script MT, Segoe Script, cursive" font-size="150" font-weight="600" fill="#c79100">Accesorios</text>
+  <path d="M731 399c7-12 21-13 28-1 7-12 22-11 28 1 8 17-11 31-28 46-17-15-36-29-28-46z" fill="#c79100"/>
+</svg>
