@@ -24,6 +24,13 @@
       fix.defer=true;
       (document.body||document.documentElement).appendChild(fix);
     }
+    if(!document.querySelector('script[data-fer-variant-image]')){
+      const sync=document.createElement('script');
+      sync.src='variant-image-sync.js?v=20260915-variant-images-v1';
+      sync.dataset.ferVariantImage='1';
+      sync.defer=true;
+      (document.body||document.documentElement).appendChild(sync);
+    }
   }
 
   function applyBranding(){
