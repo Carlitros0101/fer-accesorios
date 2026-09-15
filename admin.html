@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#fffaf7">
+<title>FER Accesorios · Administración</title>
+<link rel="icon" type="image/png" href="assets/branding/fer-logo-final.png">
+<link rel="stylesheet" href="admin-v1.css?v=20260915-admin-v1">
+</head>
+<body>
+<main class="admin-shell">
+  <header class="admin-top">
+    <div class="admin-brand"><img src="assets/branding/fer-logo-final.png" alt="FER Accesorios"><div><h1>Panel de tienda</h1><p>Stock, destacados y asociación de variantes con fotografías.</p></div></div>
+    <div class="admin-actions"><a class="admin-btn" href="./" target="_blank">Ver tienda</a><button class="admin-btn" id="resetLocal">Restablecer</button><button class="admin-btn" id="exportConfig">Exportar JSON</button><button class="admin-btn primary" id="saveLocal">Aplicar en este dispositivo</button></div>
+  </header>
+  <div class="admin-warning">Este panel no contiene contraseñas ni credenciales. Los cambios aplicados aquí afectan este dispositivo de inmediato. Para publicarlos para todos los clientes, exporta <b>store-admin.json</b> y súbelo al repositorio o envíamelo para publicarlo.</div>
+  <div class="admin-grid">
+    <aside class="admin-sidebar">
+      <label><span>Buscar producto</span><input id="productSearch" placeholder="Código, nombre, material…"></label>
+      <label><span>Producto</span><select id="productSelect"></select></label>
+      <label><span>Stock total</span><input id="stockInput" type="number" min="0" step="1" placeholder="Sin dato"></label>
+      <div class="checks"><label class="check"><input id="featuredCheck" type="checkbox"> Destacado</label><label class="check"><input id="personalizableCheck" type="checkbox"> Personalizable</label></div>
+      <div id="saveState" class="save-state"></div>
+      <div class="section-label">Actividad en este dispositivo</div>
+      <div class="analytics" id="analytics"></div>
+      <button class="admin-btn" id="clearAnalytics" style="margin-top:10px">Limpiar actividad local</button>
+    </aside>
+    <section class="admin-panel">
+      <div class="product-head"><div><h2 id="productTitle">Producto</h2><div class="muted" id="productMeta"></div></div></div>
+      <div class="section-label">Fotografías del producto</div>
+      <div class="image-grid" id="imageGrid"></div>
+      <div class="variant-editor"><div class="section-label">Asociación variante → fotografía</div><div id="variantEditor"></div></div>
+    </section>
+  </div>
+</main>
+<script src="admin-v1.js?v=20260915-admin-v1"></script>
+</body>
+</html>
