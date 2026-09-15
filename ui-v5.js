@@ -1,5 +1,5 @@
 (() => {
-  const LOGO='assets/branding/fer-logo-transparent.svg';
+  const LOGO='assets/branding/fer-logo-oficial.webp?v=20260915-logo-oficial-v8';
   const RAIL_IDS=['railNew','railGifts','railStones','railHandmade'];
 
   function applyBranding(){
