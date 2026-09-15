@@ -1,5 +1,5 @@
 (() => {
-  const LOGO='assets/branding/fer-logo.svg';
+  const LOGO='assets/branding/fer-logo-transparent.svg';
   const RAIL_IDS=['railNew','railGifts','railStones','railHandmade'];
 
   function applyBranding(){
@@ -113,8 +113,6 @@
 
   function start(){
     setupAll();
-    // Respaldo: tienda-v2 espera un JSON remoto antes de pintar. Estas llamadas
-    // garantizan que las fotos del catalogo.js aparezcan inmediatamente.
     setTimeout(setupAll,250);
     setTimeout(setupAll,1200);
     setTimeout(setupAll,3000);
