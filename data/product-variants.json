@@ -27,13 +27,13 @@
   "FER-007": {
     "groups": [
       {"name": "Piedra natural", "type": "options", "required": true, "options": [
-        {"label": "Lapislázuli", "value": "Lapislázuli", "imageIndex": 0},
-        {"label": "Jade", "value": "Jade", "imageIndex": 1},
+        {"label": "Ojo de tigre", "value": "Ojo de tigre", "imageIndex": 0},
+        {"label": "Turquesa", "value": "Turquesa", "imageIndex": 1},
         {"label": "Piedra Luna", "value": "Piedra Luna", "imageIndex": 2},
-        {"label": "Amatista", "value": "Amatista", "imageIndex": 3},
-        {"label": "Ojo de tigre", "value": "Ojo de tigre", "imageIndex": 4},
-        {"label": "Jaspe rojo", "value": "Jaspe rojo", "imageIndex": 5},
-        {"label": "Turquesa", "value": "Turquesa", "imageIndex": 6}
+        {"label": "Jade", "value": "Jade", "imageIndex": 3},
+        {"label": "Amatista", "value": "Amatista", "imageIndex": 4},
+        {"label": "Lapislázuli", "value": "Lapislázuli", "imageIndex": 5},
+        {"label": "Jaspe rojo", "value": "Jaspe rojo", "imageIndex": 6}
       ]}
     ]
   },
@@ -70,6 +70,19 @@
   "FER-030": {
     "groups": [
       {"name": "Color / modelo", "type": "images", "required": true}
+    ]
+  },
+  "FER-036": {
+    "groups": [
+      {"name": "Terminación", "type": "options", "required": true, "options": ["Dorado", "Plateado"]},
+      {"name": "Piedra natural", "type": "options", "required": true, "options": [
+        {"label": "Lapislázuli", "value": "Lapislázuli", "imageIndex": 0},
+        {"label": "Piedra Luna", "value": "Piedra Luna", "imageIndex": 1},
+        {"label": "Citrino", "value": "Citrino", "imageIndex": 2},
+        {"label": "Ojo de tigre", "value": "Ojo de tigre", "imageIndex": 3},
+        {"label": "Turquesa", "value": "Turquesa", "imageIndex": 4},
+        {"label": "Amatista", "value": "Amatista", "imageIndex": 5}
+      ]}
     ]
   },
   "FER-131": {
