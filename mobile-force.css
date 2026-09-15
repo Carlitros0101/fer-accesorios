@@ -1,0 +1,87 @@
+/* FER Accesorios — modo móvil forzado v4 */
+html.fer-mobile,html.fer-mobile body{width:100%!important;max-width:100%!important;overflow-x:hidden!important}
+html.fer-mobile body{padding-bottom:15vw;font-size:3.2vw}
+html.fer-mobile .announcement{padding:2.4vw 3vw;font-size:2vw;letter-spacing:.12em}
+html.fer-mobile .nav{height:15vw;padding:0 4vw}
+html.fer-mobile .brand{font-size:6vw}
+html.fer-mobile .brand small{font-size:2vw}
+html.fer-mobile .navlinks a:not(.wa),html.fer-mobile .nav-fav{display:none!important}
+html.fer-mobile .navlinks .wa{display:inline-flex!important;padding:2.8vw 3.4vw;font-size:2.5vw}
+html.fer-mobile .hero{display:grid!important;grid-template-columns:1fr!important;gap:6vw;padding:10vw 4vw 12vw}
+html.fer-mobile .hero-copy{max-width:none!important}
+html.fer-mobile .hero h1{font-size:12vw!important;line-height:.95;margin:3vw 0 5vw}
+html.fer-mobile .hero-copy>p:not(.eyebrow){font-size:3.7vw!important;line-height:1.6;max-width:none}
+html.fer-mobile .eyebrow{font-size:2.2vw;letter-spacing:.18em}
+html.fer-mobile .hero-actions{gap:2.2vw;margin-top:5vw}
+html.fer-mobile .btn{padding:3.2vw 4.2vw;font-size:2.8vw}
+html.fer-mobile .hero-stats{gap:4vw;margin-top:6vw}
+html.fer-mobile .hero-stat{min-width:27vw}
+html.fer-mobile .hero-stat b{font-size:7vw}
+html.fer-mobile .hero-stat span{font-size:2.1vw}
+html.fer-mobile .hero-gallery{height:92vw;gap:2vw;grid-template-columns:1.08fr .92fr}
+html.fer-mobile .section{padding:12vw 4vw}
+html.fer-mobile .sectionhead{display:block!important;margin-bottom:6vw}
+html.fer-mobile .sectionhead h2{font-size:10vw!important;margin-top:1.5vw}
+html.fer-mobile .sectionhead>p{font-size:3.4vw;line-height:1.6;margin-top:4vw;max-width:none}
+html.fer-mobile .featured{grid-template-columns:1fr!important;gap:3vw}
+html.fer-mobile .featured-card,html.fer-mobile .featured-card:first-child{grid-column:auto!important;min-height:78vw!important;border-radius:4vw}
+html.fer-mobile .collection-cards{grid-template-columns:1fr 1fr!important;gap:2vw}
+html.fer-mobile .product-rail{grid-auto-columns:72vw!important;gap:3vw}
+html.fer-mobile .catalog-toolbar.v2{position:static!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:2vw;padding:2.5vw;border-radius:4vw}
+html.fer-mobile .catalog-toolbar.v2 .search{grid-column:1/-1!important}
+html.fer-mobile .search input,html.fer-mobile .catalog-toolbar select{min-height:11vw;font-size:3vw}
+html.fer-mobile .grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:2.2vw}
+html.fer-mobile .card-title{font-size:4vw!important;min-height:9vw}
+html.fer-mobile .price{font-size:3.4vw!important}
+html.fer-mobile .description{display:none!important}
+html.fer-mobile .small-btn{font-size:2.5vw;padding:2.3vw 2vw}
+html.fer-mobile .card-actions.v2{grid-template-columns:1fr!important}
+html.fer-mobile .steps{grid-template-columns:1fr!important}
+html.fer-mobile .mobile-nav{display:grid!important;grid-template-columns:repeat(4,1fr)!important;height:15vw}
+html.fer-mobile .mobile-nav a{font-size:2.4vw}
+html.fer-mobile .favorite-floating{display:none!important}
+
+/* Favoritos a pantalla completa */
+html.fer-mobile .favorites-overlay{display:none!important}
+html.fer-mobile .favorites-drawer{position:fixed!important;inset:0!important;width:100vw!important;max-width:none!important;height:100vh!important;height:100dvh!important;transform:translateY(102%)!important;box-shadow:none!important;z-index:9999!important}
+html.fer-mobile .favorites-drawer.open{transform:translateY(0)!important}
+html.fer-mobile .favorites-head{padding:5vw}
+html.fer-mobile .favorites-head h3{font-size:7vw}
+html.fer-mobile .favorites-close{width:10vw;height:10vw;font-size:5vw}
+html.fer-mobile .favorites-list{padding:3vw 4vw}
+html.fer-mobile .favorite-row{grid-template-columns:18vw 1fr 9vw;gap:3vw;padding:3vw 0}
+html.fer-mobile .favorite-row img{width:18vw;height:18vw;border-radius:3vw}
+html.fer-mobile .favorite-row b{font-size:4.3vw}
+html.fer-mobile .favorite-row span{font-size:2.7vw}
+html.fer-mobile .favorites-foot{padding:4vw 4vw calc(4vw + env(safe-area-inset-bottom))}
+html.fer-mobile .favorites-foot .btn{font-size:3vw;padding:3.5vw}
+
+/* Ficha de producto realmente fullscreen, incluso si Chrome usa viewport de escritorio */
+html.fer-mobile .modal.open{display:block!important;position:fixed!important;inset:0!important;padding:0!important;background:var(--paper)!important;backdrop-filter:none!important;z-index:10000!important;overflow:hidden!important}
+html.fer-mobile .modal-card{position:absolute!important;inset:0!important;width:100vw!important;max-width:none!important;height:100vh!important;height:100dvh!important;max-height:none!important;border-radius:0!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;box-shadow:none!important;background:var(--paper)!important}
+html.fer-mobile .modal-image{flex:0 0 43vh!important;flex-basis:43dvh!important;height:43vh!important;height:43dvh!important;min-height:0!important;max-height:none!important;background:#f3e8e3!important;position:relative!important;padding-bottom:14vw!important}
+html.fer-mobile .modal-image>img{width:100%!important;height:100%!important;max-height:none!important;object-fit:contain!important}
+html.fer-mobile .modal-content{flex:1 1 auto!important;min-height:0!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;padding:5vw 4vw calc(22vw + env(safe-area-inset-bottom))!important}
+html.fer-mobile .modal-content h3{font-size:7.5vw!important;line-height:1.05!important;margin:1.5vw 0 2vw}
+html.fer-mobile .modal-price{font-size:5vw!important;margin-bottom:3vw}
+html.fer-mobile .modal-description{font-size:3.2vw!important;line-height:1.6!important}
+html.fer-mobile .availability-pill{padding:1.8vw 2.4vw;font-size:2.4vw;margin-bottom:3vw}
+html.fer-mobile .product-tag{padding:1.7vw 2.2vw;font-size:2.2vw}
+html.fer-mobile .meta-grid{grid-template-columns:1fr 1fr!important;gap:2vw;margin:4vw 0}
+html.fer-mobile .meta{padding:3vw;border-radius:3vw}
+html.fer-mobile .meta small{font-size:2vw}
+html.fer-mobile .meta b{font-size:2.8vw}
+html.fer-mobile .modal-fav{padding:3vw;font-size:2.8vw;margin-bottom:2vw}
+html.fer-mobile .modal-actions{grid-template-columns:1fr!important;gap:2vw}
+html.fer-mobile .modal-actions .wa{grid-column:auto!important;position:sticky!important;bottom:1vw!important;padding:3.6vw!important;font-size:3vw!important}
+html.fer-mobile .related-block{margin-top:6vw;padding-top:5vw}
+html.fer-mobile .related-block h4{font-size:6vw}
+html.fer-mobile .related-grid{grid-template-columns:repeat(3,1fr)!important;gap:2vw}
+html.fer-mobile .related-card:nth-child(4){display:none!important}
+html.fer-mobile .related-card span{font-size:2.2vw;padding:2vw}
+html.fer-mobile .close{position:fixed!important;right:3vw!important;top:3vw!important;width:10vw!important;height:10vw!important;font-size:5vw!important;z-index:10002!important}
+html.fer-mobile .gallery-arrow{width:10vw!important;height:10vw!important;font-size:6vw!important}
+html.fer-mobile .gallery-prev{left:3vw!important}html.fer-mobile .gallery-next{right:3vw!important}
+html.fer-mobile .gallery-counter{top:3vw!important;left:3vw!important;padding:1.6vw 2.2vw!important;font-size:2.2vw!important}
+html.fer-mobile .modal-thumbs{left:3vw!important;right:3vw!important;bottom:2vw!important;gap:1.5vw!important}
+html.fer-mobile .modal-thumb{flex-basis:12vw!important;width:12vw!important;height:12vw!important;border-radius:2vw!important}
