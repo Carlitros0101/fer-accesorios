@@ -7,19 +7,34 @@
   "FER-004": {
     "groups": [
       {"name": "Material del gancho", "type": "options", "required": true, "options": ["Acero quirúrgico", "Plata"]},
-      {"name": "Color", "type": "options", "required": true, "options": ["Rojo", "Blanco"]}
+      {"name": "Color", "type": "options", "required": true, "options": [
+        {"label": "Rojo", "value": "Rojo", "imageIndex": 0},
+        {"label": "Blanco", "value": "Blanco", "imageIndex": 1}
+      ]}
     ]
   },
   "FER-006": {
     "groups": [
-      {"name": "Piedra natural", "type": "options", "required": true, "options": ["Lapislázuli", "Amatista", "Jade"]}
+      {"name": "Piedra natural", "type": "options", "required": true, "options": [
+        {"label": "Lapislázuli", "value": "Lapislázuli", "imageIndex": 0},
+        {"label": "Amatista", "value": "Amatista", "imageIndex": 1},
+        {"label": "Jade", "value": "Jade", "imageIndex": 2}
+      ]}
     ],
     "allowNotes": true,
     "notesPlaceholder": "Si quieres una combinación personalizada, indícala aquí"
   },
   "FER-007": {
     "groups": [
-      {"name": "Piedra natural", "type": "options", "required": true, "options": ["Lapislázuli", "Jade", "Piedra Luna", "Amatista", "Ojo de tigre", "Jaspe rojo", "Turquesa"]}
+      {"name": "Piedra natural", "type": "options", "required": true, "options": [
+        {"label": "Lapislázuli", "value": "Lapislázuli", "imageIndex": 0},
+        {"label": "Jade", "value": "Jade", "imageIndex": 1},
+        {"label": "Piedra Luna", "value": "Piedra Luna", "imageIndex": 2},
+        {"label": "Amatista", "value": "Amatista", "imageIndex": 3},
+        {"label": "Ojo de tigre", "value": "Ojo de tigre", "imageIndex": 4},
+        {"label": "Jaspe rojo", "value": "Jaspe rojo", "imageIndex": 5},
+        {"label": "Turquesa", "value": "Turquesa", "imageIndex": 6}
+      ]}
     ]
   },
   "FER-012": {
