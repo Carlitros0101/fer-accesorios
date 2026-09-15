@@ -1,0 +1,43 @@
+/* FER Accesorios — identidad + carruseles v5 */
+.brand-logo{display:inline-flex!important;align-items:center;justify-content:center;text-decoration:none;overflow:hidden}
+.brand-logo img{display:block;width:148px;height:64px;object-fit:contain;transform:scale(1.22);transform-origin:center}
+.hero-logo{display:block;width:min(250px,48vw);height:auto;margin:0 0 18px;object-fit:contain}
+.footer-logo{display:block;width:150px;height:auto;object-fit:contain}
+footer .brand-logo{min-width:150px}
+
+/* carruseles */
+.rail-section{position:relative;min-width:0}
+.product-rail{scroll-behavior:smooth!important;scroll-snap-type:x mandatory!important;overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y;scrollbar-width:none!important;padding-bottom:12px!important}
+.product-rail::-webkit-scrollbar{display:none!important}
+.product-rail>.rail-card{scroll-snap-align:start;scroll-snap-stop:always;flex:none}
+.rail-controls{display:flex;align-items:center;justify-content:flex-end;gap:9px;margin:10px 0 0}
+.rail-arrow{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--wine);display:grid;place-items:center;font-size:23px;line-height:1;cursor:pointer;box-shadow:0 5px 15px rgba(69,38,47,.08);transition:.18s ease}
+.rail-arrow:hover{transform:translateY(-1px);background:#fff6f3}
+.rail-arrow:disabled{opacity:.3;cursor:default;transform:none}
+.rail-counter{min-width:52px;text-align:center;color:var(--muted);font-size:11px;font-weight:800}
+.rail-swipe-hint{display:none;color:var(--muted);font-size:11px;margin:8px 0 0}
+
+/* cabecera con logo */
+.nav{overflow:visible}
+.nav>.brand-logo{height:100%}
+
+@media(max-width:820px){
+  .brand-logo img{width:122px;height:54px;transform:scale(1.26)}
+  .hero-logo{width:185px;margin-bottom:12px}
+  .footer-logo{width:130px}
+  .rail-controls{justify-content:space-between;margin-top:8px}
+  .rail-arrow{width:44px;height:44px;font-size:25px}
+  .rail-counter{font-size:12px}
+  .rail-swipe-hint{display:block}
+  .product-rail{padding-right:12vw!important}
+}
+
+html.fer-mobile .brand-logo img{width:28vw!important;height:12vw!important;transform:scale(1.22)!important}
+html.fer-mobile .hero-logo{width:45vw!important;max-width:240px!important;margin:0 0 3vw!important}
+html.fer-mobile .footer-logo{width:34vw!important;max-width:170px!important}
+html.fer-mobile .product-rail{overflow-x:auto!important;overflow-y:hidden!important;display:grid!important;grid-auto-flow:column!important;grid-auto-columns:72vw!important;gap:3vw!important;scroll-snap-type:x mandatory!important;touch-action:pan-x!important;padding-right:14vw!important}
+html.fer-mobile .rail-section{overflow:visible!important}
+html.fer-mobile .rail-controls{display:flex!important;justify-content:space-between!important;align-items:center!important;margin-top:2.5vw!important}
+html.fer-mobile .rail-arrow{width:11vw!important;height:11vw!important;font-size:6vw!important}
+html.fer-mobile .rail-counter{font-size:2.8vw!important}
+html.fer-mobile .rail-swipe-hint{display:block!important;font-size:2.5vw!important;margin-top:1.5vw!important}
