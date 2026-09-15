@@ -4,27 +4,30 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#fffaf7">
-<meta name="description" content="Fer Accesorios: catálogo de accesorios artesanales, favoritos y consulta directa por WhatsApp.">
+<meta name="description" content="Fer Accesorios: catálogo de accesorios artesanales, variantes, carrito y pedido directo por WhatsApp.">
 <meta property="og:title" content="Fer Accesorios | Catálogo">
-<meta property="og:description" content="Descubre accesorios artesanales, guarda favoritos y consulta tus diseños por WhatsApp.">
+<meta property="og:description" content="Descubre accesorios artesanales, elige tu variante exacta, arma tu carrito y consulta por WhatsApp.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://carlitros0101.github.io/fer-accesorios/">
-<meta property="og:image" content="https://carlitros0101.github.io/fer-accesorios/assets/branding/fer-logo-final.png?v=20260915-logo-fix-v9">
+<meta property="og:image" content="https://carlitros0101.github.io/fer-accesorios/assets/branding/fer-logo-final.png?v=20260915-store-v4">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://carlitros0101.github.io/fer-accesorios/">
-<link rel="icon" type="image/png" href="assets/branding/fer-logo-final.png?v=20260915-logo-fix-v9">
-<script src="mobile-detect.js?v=20260915-logo-fix-v9"></script>
-<link rel="stylesheet" href="catalogo-site.css?v=20260915-logo-fix-v9">
-<link rel="stylesheet" href="tienda-v2.css?v=20260915-logo-fix-v9">
-<link rel="stylesheet" href="mobile-fix.css?v=20260915-logo-fix-v9">
-<link rel="stylesheet" href="mobile-force.css?v=20260915-logo-fix-v9">
-<link rel="stylesheet" href="ui-v5.css?v=20260915-logo-fix-v9">
+<link rel="icon" type="image/png" href="assets/branding/fer-logo-final.png?v=20260915-store-v4">
+<link rel="apple-touch-icon" href="assets/branding/fer-logo-final.png?v=20260915-store-v4">
+<link rel="manifest" href="manifest.webmanifest?v=20260915-store-v4">
+<script src="mobile-detect.js?v=20260915-store-v4"></script>
+<link rel="stylesheet" href="catalogo-site.css?v=20260915-store-v4">
+<link rel="stylesheet" href="tienda-v2.css?v=20260915-store-v4">
+<link rel="stylesheet" href="mobile-fix.css?v=20260915-store-v4">
+<link rel="stylesheet" href="mobile-force.css?v=20260915-store-v4">
+<link rel="stylesheet" href="ui-v5.css?v=20260915-store-v4">
+<link rel="stylesheet" href="store-v4.css?v=20260915-store-v4">
 <title>Fer Accesorios | Catálogo</title>
 </head>
 <body>
-<div class="announcement">CATÁLOGO FER ACCESORIOS · HECHO A MANO · GUARDA TUS FAVORITOS · CONSULTA POR WHATSAPP</div>
+<div class="announcement">CATÁLOGO FER ACCESORIOS · HECHO A MANO · ELIGE TU VARIANTE · ARMA TU CARRITO · PIDE POR WHATSAPP</div>
 <header class="nav">
-  <a class="brand brand-logo" data-brand-ready="1" href="#inicio"><img src="assets/branding/fer-logo-final.png?v=20260915-logo-fix-v9" alt="FER Accesorios"></a>
+  <a class="brand brand-logo" data-brand-ready="1" href="#inicio"><img src="assets/branding/fer-logo-final.png?v=20260915-store-v4" alt="FER Accesorios"></a>
   <nav class="navlinks" aria-label="Principal">
     <a href="#catalogo">Catálogo</a>
     <a href="#colecciones">Colecciones</a>
@@ -36,10 +39,10 @@
 <main>
 <section class="hero" id="inicio">
   <div class="hero-copy">
-    <img class="hero-logo" src="assets/branding/fer-logo-final.png?v=20260915-logo-fix-v9" alt="FER Accesorios">
+    <img class="hero-logo" src="assets/branding/fer-logo-final.png?v=20260915-store-v4" alt="FER Accesorios">
     <p class="eyebrow" style="display:none">FER ACCESORIOS</p>
     <h1>Encuentra tu<br><em>próximo favorito.</em></h1>
-    <p>Explora el catálogo completo, filtra por estilo o precio, guarda tus favoritos y consulta tus diseños directamente por WhatsApp.</p>
+    <p>Explora el catálogo completo, elige la variante exacta, arma tu carrito y envía el pedido directamente por WhatsApp.</p>
     <div class="hero-actions">
       <a class="btn" href="#catalogo">Explorar catálogo</a>
       <button class="btn secondary" id="favoritesHero" onclick="document.getElementById('favoritesNav').click()">♥ Ver favoritos</button>
@@ -56,7 +59,7 @@
 <section class="section dark" id="novedades">
   <div class="sectionhead">
     <div><p class="eyebrow">SELECCIÓN DESTACADA</p><h2>Para descubrir.</h2></div>
-    <p>Abre cualquier diseño para revisar sus fotos, descripción, materiales, disponibilidad y productos relacionados.</p>
+    <p>Abre cualquier diseño para revisar sus fotos, descripción, materiales, disponibilidad, variantes y productos relacionados.</p>
   </div>
   <div class="featured" id="featuredGrid"></div>
 </section>
@@ -93,16 +96,16 @@
   <div class="load-wrap"><button class="btn secondary" id="loadMore">Mostrar más</button></div>
 </section>
 <section class="section buy" id="como-comprar">
-  <div class="sectionhead"><div><p class="eyebrow">COMPRA SIMPLE</p><h2>¿Cómo consultar?</h2></div></div>
+  <div class="sectionhead"><div><p class="eyebrow">COMPRA SIMPLE</p><h2>¿Cómo pedir?</h2></div></div>
   <div class="steps">
-    <article class="step"><b>01</b><h3>Explora</h3><p>Busca por nombre, categoría, precio o material y revisa todas las fotografías.</p></article>
-    <article class="step"><b>02</b><h3>Guarda</h3><p>Marca ♥ para reunir tus favoritos. Se guardan en este dispositivo, sin crear una cuenta.</p></article>
-    <article class="step"><b>03</b><h3>Consulta</h3><p>Envía un producto o toda tu selección de favoritos directamente por WhatsApp.</p></article>
+    <article class="step"><b>01</b><h3>Explora y elige</h3><p>Busca tu diseño y, cuando corresponda, selecciona piedra, color, terminación o modelo exacto.</p></article>
+    <article class="step"><b>02</b><h3>Arma tu carrito</h3><p>Agrega uno o varios productos, ajusta cantidades y revisa la selección antes de continuar.</p></article>
+    <article class="step"><b>03</b><h3>Confirma por WhatsApp</h3><p>Revisa el resumen, indica comuna y forma de entrega y envía el pedido completo para confirmar disponibilidad.</p></article>
   </div>
 </section>
-<section class="cta"><p class="eyebrow">FER ACCESORIOS</p><h2>¿Ya elegiste tus favoritos?</h2><p>Guárdalos y envía toda tu selección en un solo mensaje.</p><button class="btn" onclick="document.getElementById('favoritesNav').click()">♥ Abrir mis favoritos</button></section>
+<section class="cta"><p class="eyebrow">FER ACCESORIOS</p><h2>Elige exactamente lo que quieres.</h2><p>Selecciona tus variantes, arma el carrito y envía el pedido completo por WhatsApp.</p><a class="btn" href="#catalogo">Explorar catálogo</a></section>
 </main>
-<footer><a class="brand brand-logo" data-brand-ready="1" href="#inicio"><img class="footer-logo" src="assets/branding/fer-logo-final.png?v=20260915-logo-fix-v9" alt="FER Accesorios"></a><span>Accesorios artesanales</span><span>© 2026 Fer Accesorios</span></footer>
+<footer><a class="brand brand-logo" data-brand-ready="1" href="#inicio"><img class="footer-logo" src="assets/branding/fer-logo-final.png?v=20260915-store-v4" alt="FER Accesorios"></a><span>Accesorios artesanales</span><span>© 2026 Fer Accesorios</span></footer>
 <nav class="mobile-nav" aria-label="Navegación móvil"><a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a><a href="#" id="mobileFavorites">Favoritos <span class="mobile-fav-count" data-fav-count>0</span></a><a href="https://wa.me/56964133598" target="_blank" rel="noopener">WhatsApp</a></nav>
 <button class="favorite-floating" id="favoritesFloating">♥ Favoritos <b data-fav-count>0</b></button>
 <div class="favorites-overlay" id="favoritesOverlay"></div>
@@ -125,13 +128,14 @@
       <div class="meta-grid"><div class="meta"><small>REFERENCIA</small><b id="metaCode"></b></div><div class="meta"><small>DISPONIBILIDAD</small><b id="metaAvailability"></b></div></div>
       <button class="modal-fav" id="modalFavorite">♡ Agregar a favoritos</button>
       <div class="modal-actions"><a class="btn wa" id="waConsult" href="#" target="_blank" rel="noopener">Consultar por WhatsApp</a><button class="btn secondary" id="shareProduct">Compartir</button><button class="btn secondary" id="copyLink">Copiar enlace</button></div>
-      <div class="related-block"><h4>También te puede gustar</h4><div class="related-grid" id="relatedGrid"></div></div>
+      <div class="related-block"><h4>Combínalo con</h4><div class="related-grid" id="relatedGrid"></div></div>
     </div>
   </div>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="catalogo.js?v=20260915-logo-fix-v9"></script>
-<script src="tienda-v2.js?v=20260915-logo-fix-v9"></script>
-<script src="ui-v5.js?v=20260915-logo-fix-v9"></script>
+<script src="catalogo.js?v=20260915-store-v4"></script>
+<script src="tienda-v2.js?v=20260915-store-v4"></script>
+<script src="ui-v5.js?v=20260915-store-v4"></script>
+<script src="store-v4.js?v=20260915-store-v4"></script>
 </body>
 </html>
