@@ -2,6 +2,23 @@
   const LOGO='assets/branding/fer-logo-final.png?v=20260915-logo-fix-v9';
   const RAIL_IDS=['railNew','railGifts','railStones','railHandmade'];
 
+  function loadCartAssets(){
+    if(!document.querySelector('link[data-fer-cart]')){
+      const link=document.createElement('link');
+      link.rel='stylesheet';
+      link.href='cart-v1.css?v=20260915-cart-v1';
+      link.dataset.ferCart='1';
+      document.head.appendChild(link);
+    }
+    if(!document.querySelector('script[data-fer-cart]')){
+      const script=document.createElement('script');
+      script.src='cart-v1.js?v=20260915-cart-v1';
+      script.dataset.ferCart='1';
+      script.defer=true;
+      (document.body||document.documentElement).appendChild(script);
+    }
+  }
+
   function applyBranding(){
     document.querySelectorAll('header .brand, footer .brand').forEach((el,i)=>{
       el.dataset.brandReady='1';
@@ -96,6 +113,6 @@
     RAIL_IDS.forEach(id=>{const rail=document.getElementById(id);if(!rail)return;updateControls(rail,rail.parentElement.querySelector('.rail-controls'))});
   }
 
-  function start(){setupAll();setTimeout(setupAll,250);setTimeout(setupAll,1200);setTimeout(setupAll,3000)}
+  function start(){loadCartAssets();setupAll();setTimeout(setupAll,250);setTimeout(setupAll,1200);setTimeout(setupAll,3000)}
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',start,{once:true}); else start();
 })();
