@@ -1,0 +1,66 @@
+{
+  "FER-003": {
+    "groups": [
+      {"name": "Color / modelo", "type": "images", "required": true}
+    ]
+  },
+  "FER-004": {
+    "groups": [
+      {"name": "Material del gancho", "type": "options", "required": true, "options": ["Acero quirúrgico", "Plata"]},
+      {"name": "Color", "type": "options", "required": true, "options": ["Rojo", "Blanco"]}
+    ]
+  },
+  "FER-006": {
+    "groups": [
+      {"name": "Piedra natural", "type": "options", "required": true, "options": ["Lapislázuli", "Amatista", "Jade"]}
+    ],
+    "allowNotes": true,
+    "notesPlaceholder": "Si quieres una combinación personalizada, indícala aquí"
+  },
+  "FER-007": {
+    "groups": [
+      {"name": "Piedra natural", "type": "options", "required": true, "options": ["Lapislázuli", "Jade", "Piedra Luna", "Amatista", "Ojo de tigre", "Jaspe rojo", "Turquesa"]}
+    ]
+  },
+  "FER-012": {
+    "groups": [
+      {"name": "Terminación del gancho", "type": "options", "required": true, "options": ["Baño de oro", "Acero quirúrgico"]}
+    ]
+  },
+  "FER-013": {
+    "groups": [
+      {"name": "Color", "type": "text", "required": true, "placeholder": "Indica el color o combinación que prefieres"}
+    ]
+  },
+  "FER-014": {
+    "groups": [
+      {"name": "Color", "type": "text", "required": true, "placeholder": "Indica el color que prefieres"}
+    ]
+  },
+  "FER-023": {
+    "groups": [
+      {"name": "Color / modelo", "type": "images", "required": true}
+    ]
+  },
+  "FER-024": {
+    "groups": [
+      {"name": "Color / modelo", "type": "images", "required": true}
+    ]
+  },
+  "FER-025": {
+    "groups": [
+      {"name": "Color / modelo", "type": "images", "required": true}
+    ]
+  },
+  "FER-030": {
+    "groups": [
+      {"name": "Color / modelo", "type": "images", "required": true}
+    ]
+  },
+  "FER-131": {
+    "groups": [
+      {"name": "Terminación", "type": "options", "required": true, "options": ["Plateado", "Dorado"]},
+      {"name": "Color", "type": "text", "required": true, "placeholder": "Indica el color o combinación que prefieres"}
+    ]
+  }
+}
