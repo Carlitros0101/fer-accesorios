@@ -4,9 +4,12 @@
 
   function applyBranding(){
     document.querySelectorAll('header .brand, footer .brand').forEach((el,i)=>{
+      if(el.dataset.brandReady==='1') return;
+      el.dataset.brandReady='1';
       el.classList.add('brand-logo');
       el.innerHTML=`<img class="${i?'footer-logo':''}" src="${LOGO}" alt="FER Accesorios">`;
     });
+
     const heroCopy=document.querySelector('.hero-copy');
     if(heroCopy&&!heroCopy.querySelector('.hero-logo')){
       const img=document.createElement('img');
@@ -19,6 +22,17 @@
     }
   }
 
+  function forceInitialPaint(){
+    try{
+      if(document.getElementById('heroGallery')?.children.length===0 && typeof renderHero==='function') renderHero();
+      if(document.getElementById('railNew')?.children.length===0 && typeof renderCommercial==='function') renderCommercial();
+      if(document.getElementById('productGrid')?.children.length===0 && typeof renderCatalog==='function') renderCatalog(true);
+      if(typeof renderFavorites==='function') renderFavorites();
+    }catch(err){
+      console.warn('FER: render inicial de respaldo',err);
+    }
+  }
+
   function cardStep(rail){
     const card=rail.querySelector('.rail-card');
     if(!card) return Math.max(rail.clientWidth*.78,240);
@@ -28,6 +42,7 @@
   }
 
   function updateControls(rail,controls){
+    if(!rail||!controls) return;
     const prev=controls.querySelector('[data-rail-prev]');
     const next=controls.querySelector('[data-rail-next]');
     const count=controls.querySelector('.rail-counter');
@@ -41,8 +56,10 @@
   }
 
   function setupRail(rail){
-    if(!rail || rail.dataset.carouselReady==='1') return;
+    if(!rail) return;
+    if(rail.dataset.carouselReady==='1') return;
     rail.dataset.carouselReady='1';
+
     const section=rail.parentElement;
     section.classList.add('rail-section');
 
@@ -64,13 +81,13 @@
     const move=dir=>{
       const delta=cardStep(rail)*dir;
       rail.scrollBy({left:delta,behavior:'smooth'});
-      setTimeout(()=>updateControls(rail,controls),380);
+      setTimeout(()=>updateControls(rail,controls),420);
     };
+
     controls.querySelector('[data-rail-prev]').addEventListener('click',()=>move(-1));
     controls.querySelector('[data-rail-next]').addEventListener('click',()=>move(1));
     rail.addEventListener('scroll',()=>requestAnimationFrame(()=>updateControls(rail,controls)),{passive:true});
 
-    // Teclado y rueda horizontal en escritorio.
     rail.tabIndex=0;
     rail.setAttribute('aria-label',rail.getAttribute('aria-label')||'Carrusel de productos');
     rail.addEventListener('keydown',e=>{
@@ -78,21 +95,31 @@
       if(e.key==='ArrowLeft'){e.preventDefault();move(-1)}
     });
 
-    // Cuando el catálogo termina de renderizar o cambia, recalcular.
-    new MutationObserver(()=>updateControls(rail,controls)).observe(rail,{childList:true});
+    new MutationObserver(()=>requestAnimationFrame(()=>updateControls(rail,controls))).observe(rail,{childList:true});
     requestAnimationFrame(()=>updateControls(rail,controls));
   }
 
   function setupAll(){
     applyBranding();
     RAIL_IDS.forEach(id=>setupRail(document.getElementById(id)));
+    forceInitialPaint();
+    RAIL_IDS.forEach(id=>{
+      const rail=document.getElementById(id);
+      if(!rail) return;
+      const controls=rail.parentElement.querySelector('.rail-controls');
+      updateControls(rail,controls);
+    });
   }
 
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',setupAll,{once:true});
-  else setupAll();
+  function start(){
+    setupAll();
+    // Respaldo: tienda-v2 espera un JSON remoto antes de pintar. Estas llamadas
+    // garantizan que las fotos del catalogo.js aparezcan inmediatamente.
+    setTimeout(setupAll,250);
+    setTimeout(setupAll,1200);
+    setTimeout(setupAll,3000);
+  }
 
-  // tienda-v2 carga datos de forma asíncrona; observar hasta que aparezcan tarjetas.
-  const observer=new MutationObserver(()=>setupAll());
-  observer.observe(document.documentElement,{subtree:true,childList:true});
-  setTimeout(()=>observer.disconnect(),12000);
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',start,{once:true});
+  else start();
 })();
