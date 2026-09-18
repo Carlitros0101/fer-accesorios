@@ -90,3 +90,19 @@ button,input,select{font:inherit}
   .mapping-images button{width:66px;flex-basis:66px}
   .mapping-images img{width:54px;height:54px}
 }
+
+.variant-empty{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px;border:1px dashed #d8bcc4;border-radius:16px;background:#fff9f7}
+.variant-empty b{display:block;margin-bottom:5px}
+.variant-builder-actions{display:flex;gap:8px;flex-wrap:wrap}
+.variant-builder-actions.top{margin:0 0 16px}
+.variant-source-note{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;margin-bottom:16px;border-radius:14px;background:#fff4ee;color:#6c4f43;font-size:12px}
+.variant-group-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.variant-group-name-input,.variant-option-name-input{width:100%;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:#fff;color:var(--ink);font:inherit}
+.variant-group-name-input{font-weight:800;font-size:15px}
+.variant-option-name-input{font-weight:700;font-size:12px}
+.variant-add-option{margin-top:10px}
+.mini-danger{border:0;background:#fff1f1;color:#a23b4b;border-radius:999px;padding:7px 10px;font-weight:800;font-size:11px;cursor:pointer;white-space:nowrap}
+.admin-btn.danger{color:#a23b4b;border-color:#eccfd4}
+.option-remove{align-self:center;width:30px;height:30px;padding:0;display:grid;place-items:center}
+.variant-row:has(.option-remove){grid-template-columns:minmax(140px,190px) minmax(0,1fr) 32px}
+@media(max-width:820px){.variant-empty,.variant-source-note{align-items:flex-start;flex-direction:column}.variant-row:has(.option-remove){grid-template-columns:1fr}.option-remove{justify-self:end}}
