@@ -6,27 +6,27 @@
     if(!document.querySelector('link[data-fer-cart]')){
       const link=document.createElement('link');
       link.rel='stylesheet';
-      link.href='cart-v1.css?v=20260915-variant-engine-v3';
+      link.href='cart-v1.css?v=20260918-variant-engine-v4';
       link.dataset.ferCart='1';
       document.head.appendChild(link);
     }
     if(!document.querySelector('script[data-fer-cart]')){
       const script=document.createElement('script');
-      script.src='cart-v1.js?v=20260915-variant-engine-v3';
+      script.src='cart-v1.js?v=20260918-variant-engine-v4';
       script.dataset.ferCart='1';
       script.async=false;
       (document.body||document.documentElement).appendChild(script);
     }
     if(!document.querySelector('script[data-fer-cart-wa]')){
       const fix=document.createElement('script');
-      fix.src='cart-wa-fix.js?v=20260915-variant-engine-v3';
+      fix.src='cart-wa-fix.js?v=20260918-variant-engine-v4';
       fix.dataset.ferCartWa='1';
       fix.async=false;
       (document.body||document.documentElement).appendChild(fix);
     }
     if(!document.querySelector('script[data-fer-variant-engine]')){
       const engine=document.createElement('script');
-      engine.src='variant-engine-v3.js?v=20260915-variant-engine-v3';
+      engine.src='variant-engine-v3.js?v=20260918-variant-engine-v4';
       engine.dataset.ferVariantEngine='1';
       engine.async=false;
       (document.body||document.documentElement).appendChild(engine);
