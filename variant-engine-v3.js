@@ -1,6 +1,7 @@
 (() => {
   const details=new Map();
   let variants={};
+  const ADMIN_OVERRIDE_KEY='fer_store_admin_override_v1';
   let ready=false;
 
   const $=s=>document.querySelector(s);
@@ -10,12 +11,16 @@
 
   async function load(){
     try{
-      const [cat,varRes]=await Promise.all([
-        fetch('data/catalogo-whatsapp-auto.json?v=20260915-variant-engine-v3',{cache:'no-store'}),
-        fetch('data/product-variants.json?v=20260915-variant-engine-v3',{cache:'no-store'})
+      const [cat,varRes,adminRes]=await Promise.all([
+        fetch('data/catalogo-whatsapp-auto.json?v=20260918-variant-engine-v4',{cache:'no-store'}),
+        fetch('data/product-variants.json?v=20260918-variant-engine-v4',{cache:'no-store'}),
+        fetch('data/store-admin.json?v=20260918-variant-engine-v4',{cache:'no-store'})
       ]);
       if(cat.ok){const arr=await cat.json();arr.forEach(x=>details.set(x.codigo,x))}
       if(varRes.ok)variants=await varRes.json();
+      let admin=adminRes.ok?await adminRes.json():{};
+      try{const local=JSON.parse(localStorage.getItem(ADMIN_OVERRIDE_KEY)||'null');if(local)admin=local}catch{}
+      if(admin?.customVariants)variants={...variants,...admin.customVariants};
       ready=true;
       syncNow();
     }catch(err){console.warn('FER variantes v3: no se pudo cargar la configuración',err)}
