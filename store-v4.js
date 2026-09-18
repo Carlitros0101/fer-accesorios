@@ -1,5 +1,5 @@
 (() => {
-  const VERSION='20260918-store-v4-variants';
+  const VERSION='20260918-store-v4-configured';
   const CART_KEY='fer_cart_v1';
   const PROFILE_KEY='fer_checkout_profile_v1';
   const ADMIN_OVERRIDE_KEY='fer_store_admin_override_v1';
@@ -190,17 +190,28 @@
     const obs=new MutationObserver(()=>requestAnimationFrame(()=>{decorateVariantOptions();decorateCards();decorateCart();decorateFavorites();updateModalAvailability();const h=$('.related-block h4');if(h)h.textContent='Combínalo con'}));obs.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class','aria-hidden']});
   }
 
+  async function loadPublishedAdmin(){
+    const urls=['data/store-admin.json',...Array.from({length:6},(_,i)=>`data/store-custom-variants-${i+1}.json`)];
+    const responses=await Promise.all(urls.map(u=>fetch(`${u}?v=${VERSION}`,{cache:'no-store'})));
+    const base=responses[0].ok?await responses[0].json():admin;
+    base.customVariants={...(base.customVariants||{})};
+    for(const r of responses.slice(1)){if(r.ok)Object.assign(base.customVariants,await r.json())}
+    return base;
+  }
+
   async function loadData(){
     try{
-      const [catRes,varRes,adminRes]=await Promise.all([
+      const [catRes,varRes,publishedAdmin]=await Promise.all([
         fetch(`data/catalogo-whatsapp-auto.json?v=${VERSION}`,{cache:'no-store'}),
         fetch(`data/product-variants.json?v=${VERSION}`,{cache:'no-store'}),
-        fetch(`data/store-admin.json?v=${VERSION}`,{cache:'no-store'})
+        loadPublishedAdmin()
       ]);
       if(catRes.ok){const rows=await catRes.json();rows.forEach(x=>catalog.set(x.codigo,x))}
       if(varRes.ok)variants=await varRes.json();
-      if(adminRes.ok)admin=await adminRes.json();
-      const local=readJSON(ADMIN_OVERRIDE_KEY,null);if(local&&typeof local==='object')admin=local;admin.customVariants??={};variants={...variants,...admin.customVariants};
+      admin=publishedAdmin||admin;
+      const local=readJSON(ADMIN_OVERRIDE_KEY,null);if(local&&typeof local==='object')admin=local;
+      admin.customVariants??={};
+      variants={...variants,...admin.customVariants};
     }catch(err){console.warn('FER tienda v4: configuración incompleta',err)}
   }
 
