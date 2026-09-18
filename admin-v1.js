@@ -100,8 +100,27 @@
     $('#clearAnalytics').onclick=()=>{localStorage.removeItem(ANALYTICS_KEY);analytics()};
   }
 
+  async function loadPublishedConfig(){
+    const urls=['data/store-admin.json',...Array.from({length:6},(_,i)=>`data/store-custom-variants-${i+1}.json`)];
+    const responses=await Promise.all(urls.map(u=>fetch(`${u}?v=20260918-published-config-v1`,{cache:'no-store'})));
+    const base=responses[0].ok?await responses[0].json():config;
+    base.customVariants={...(base.customVariants||{})};
+    for(const r of responses.slice(1)){if(r.ok)Object.assign(base.customVariants,await r.json())}
+    return base;
+  }
+
   async function init(){
-    const [c,v,a]=await Promise.all([fetch('data/catalogo-whatsapp-auto.json',{cache:'no-store'}),fetch('data/product-variants.json',{cache:'no-store'}),fetch('data/store-admin.json',{cache:'no-store'})]);catalog=c.ok?await c.json():[];variants=v.ok?await v.json():{};config=a.ok?await a.json():config;config.customVariants??={};try{const local=JSON.parse(localStorage.getItem(OVERRIDE_KEY)||'null');if(local)config=local}catch{}config.customVariants??={}
+    const [c,v,published]=await Promise.all([
+      fetch('data/catalogo-whatsapp-auto.json?v=20260918-published-config-v1',{cache:'no-store'}),
+      fetch('data/product-variants.json?v=20260918-published-config-v1',{cache:'no-store'}),
+      loadPublishedConfig()
+    ]);
+    catalog=c.ok?await c.json():[];
+    variants=v.ok?await v.json():{};
+    config=published||config;
+    config.customVariants??={};
+    try{const local=JSON.parse(localStorage.getItem(OVERRIDE_KEY)||'null');if(local)config=local}catch{}
+    config.customVariants??={};
     current=catalog[0]?.codigo||'';bind();renderList();analytics()
   }
   document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init,{once:true}):init();
