@@ -1,5 +1,5 @@
 (() => {
-  const VERSION='20260915-store-v4';
+  const VERSION='20260918-store-v4-variants';
   const CART_KEY='fer_cart_v1';
   const PROFILE_KEY='fer_checkout_profile_v1';
   const ADMIN_OVERRIDE_KEY='fer_store_admin_override_v1';
@@ -11,7 +11,7 @@
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const catalog=new Map();
   let variants={};
-  let admin={version:1,deliveryOptions:['Por coordinar','Retiro','Despacho'],featured:[],products:{},variantImages:{}};
+  let admin={version:1,deliveryOptions:['Por coordinar','Retiro','Despacho'],featured:[],products:{},variantImages:{},customVariants:{}};
   let installPrompt=null;
 
   function readJSON(key,fallback){try{const v=JSON.parse(localStorage.getItem(key)||'');return v??fallback}catch{return fallback}}
@@ -200,7 +200,7 @@
       if(catRes.ok){const rows=await catRes.json();rows.forEach(x=>catalog.set(x.codigo,x))}
       if(varRes.ok)variants=await varRes.json();
       if(adminRes.ok)admin=await adminRes.json();
-      const local=readJSON(ADMIN_OVERRIDE_KEY,null);if(local&&typeof local==='object')admin=local;
+      const local=readJSON(ADMIN_OVERRIDE_KEY,null);if(local&&typeof local==='object')admin=local;admin.customVariants??={};variants={...variants,...admin.customVariants};
     }catch(err){console.warn('FER tienda v4: configuración incompleta',err)}
   }
 
