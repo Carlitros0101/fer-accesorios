@@ -9,21 +9,30 @@
   const currentCode=()=>$('#metaCode')?.textContent.trim()||'';
   const imagesOf=code=>details.get(code)?.imagenes||[];
 
+  async function loadPublishedAdmin(){
+    const urls=['data/store-admin.json',...Array.from({length:6},(_,i)=>`data/store-custom-variants-${i+1}.json`)];
+    const responses=await Promise.all(urls.map(u=>fetch(`${u}?v=20260918-published-config-v1`,{cache:'no-store'})));
+    const base=responses[0].ok?await responses[0].json():{};
+    base.customVariants={...(base.customVariants||{})};
+    for(const r of responses.slice(1)){if(r.ok)Object.assign(base.customVariants,await r.json())}
+    return base;
+  }
+
   async function load(){
     try{
-      const [cat,varRes,adminRes]=await Promise.all([
-        fetch('data/catalogo-whatsapp-auto.json?v=20260918-variant-engine-v4',{cache:'no-store'}),
-        fetch('data/product-variants.json?v=20260918-variant-engine-v4',{cache:'no-store'}),
-        fetch('data/store-admin.json?v=20260918-variant-engine-v4',{cache:'no-store'})
+      const [cat,varRes,publishedAdmin]=await Promise.all([
+        fetch('data/catalogo-whatsapp-auto.json?v=20260918-published-config-v1',{cache:'no-store'}),
+        fetch('data/product-variants.json?v=20260918-published-config-v1',{cache:'no-store'}),
+        loadPublishedAdmin()
       ]);
       if(cat.ok){const arr=await cat.json();arr.forEach(x=>details.set(x.codigo,x))}
       if(varRes.ok)variants=await varRes.json();
-      let admin=adminRes.ok?await adminRes.json():{};
+      let admin=publishedAdmin||{};
       try{const local=JSON.parse(localStorage.getItem(ADMIN_OVERRIDE_KEY)||'null');if(local)admin=local}catch{}
       if(admin?.customVariants)variants={...variants,...admin.customVariants};
       ready=true;
       syncNow();
-    }catch(err){console.warn('FER variantes v3: no se pudo cargar la configuración',err)}
+    }catch(err){console.warn('FER variantes: no se pudo cargar la configuración publicada',err)}
   }
 
   function optionObject(o){return typeof o==='string'?{label:o,value:o}:o||{}}
